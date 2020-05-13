@@ -1,0 +1,20 @@
+{{ range (.Site.GetPage "galleries").Pages }}
+  <section class="section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-2">
+          <h2 class="section-heading">{{.Title}}</h2>
+          <hr class="primary light">
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-2">
+          {{ .Content }}
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}
+

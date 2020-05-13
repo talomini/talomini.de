@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+    <head>
+        {{ partial "head.html" . }}
+    </head>
+
+    <body id="page-top">
+        {{ block "header" . }}
+            <header>
+                {{ partial "nav.html" (dict "context" . "fixed" false) }}
+                {{ partial "pages/hero.html" . }}
+            </header>
+        {{ end }}
+
+        {{ block "body" . }}
+        <section class="section bg-primary content-block">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-2">
+                            <!-- {{ block "title" . }} -->
+                            <!--     {{ partial "pages/title.html" . }} -->
+                            <!-- {{ end }} -->
+
+                    <h2 class="section-heading">{{ .Title }}</h2>
+                    <hr class="primary light">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-4">
+                    <div class="col-xs-12 col-md-8 text-tertiary">
+                      {{ .Content }}
+                    </div>
+
+            </div>
+        </div>
+    </section>
+
+            <!-- <main id="list&#45;content"> -->
+            <!--     <div class="list&#45;page"> -->
+            <!--         <div class="list&#45;page&#45;container"> -->
+            <!--             <article class="list&#45;page&#45;content"> -->
+            <!--             </article> -->
+            <!--         </div> -->
+            <!--     </div> -->
+            <!-- </main> -->
+        {{ end }}
+
+        {{ block "footer" . }}
+            <footer>
+                {{ partial "footer.html" . }}
+            </footer>
+        {{ end }}
+        {{ block "tail" . }}
+            {{ partial "tail.html" . }}
+        {{ end }}
+    </body>
+</html>
