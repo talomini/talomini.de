@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
-    {{ $preview := .Site.Params.preview }}
-
     <head>
         {{ partial "head.html" . }}
     </head>
@@ -12,11 +10,11 @@
 
         {{ partial "sections/home.html" . }}
         {{ partial "sections/about.html" . }}
-        {{ if $preview }}
+        {{ if .Site.Params.preview }}
           {{ partial "sections/content.html" . }}
         {{ end }}
 
-        {{ if $preview }}
+        {{ if .Site.Params.development }}
           {{ partial "sections/galleries.html" . }}
         {{ end }}
         {{ partial "sections/contact.html" . }}

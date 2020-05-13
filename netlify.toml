@@ -1,5 +1,5 @@
 [context.production]
-  command = "hugo --baseURL https://talomini.netlify.app/"
+  command = "hugo"
 
 [context.preview]
   command = "hugo --config config.toml,config.preview.toml --baseURL https://talomini.netlify.app/"
