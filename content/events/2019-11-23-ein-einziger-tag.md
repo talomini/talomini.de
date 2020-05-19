@@ -3,6 +3,7 @@ title: Ein einziger Tag - Ein Musiktheater für Kinder
 # eventDate:  2019-11-23 17:00+02
 eventDate:  2019-11-23
 eventLocation: 
+draft: true
 ---
 
 Das junge Musiktheater Talomini spielt ein Kinderkonzert! 

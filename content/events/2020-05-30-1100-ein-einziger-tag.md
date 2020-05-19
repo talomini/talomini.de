@@ -2,6 +2,7 @@
 title: Ein einziger Tag - Ein Musiktheater für Kinder
 # eventDate:  2020-05-30 11:00+02 
 eventDate:  2020-05-30
+draft: true
 ---
 
 Das junge Musiktheater Talomini spielt ein Kinderkonzert! 
