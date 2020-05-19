@@ -455,7 +455,7 @@ ul.images-list {
     font-weight: 700;
     font-size: 13px;
 
-    color: var(--NAVBAR-FIXED-BUTTON-COLOR, var(--GENERAL-LINK-COLOR-2));
+    color: var(--NAVBAR-FIXED-BUTTON-COLOR, var(--NAVBAR-BUTTON-COLOR));
 }
 
 .navbar-default .nav > li > a:hover,
@@ -498,6 +498,7 @@ ul.images-list {
     .navbar-default .nav > li > a:hover,
     .navbar-default .nav > li > a:focus:hover {
         color: var(--NAVBAR-BUTTON-HOVER-COLOR, var(--GENERAL-FONT-COLOR-3));
+        text-decoration: underline;
     }
 
     .navbar-default.affix {
@@ -519,7 +520,7 @@ ul.images-list {
 
     .navbar-default.affix .nav > li > a,
     .navbar-default.affix .nav > li > a:focus {
-        color: var(--NAVBAR-FIXED-BUTTON-COLOR, var(--GENERAL-LINK-COLOR-2));
+        color: var(--NAVBAR-FIXED-BUTTON-COLOR, var(--NAVBAR-BUTTON-COLOR));
     }
 
     .navbar-default.affix .nav > li > a:hover,
@@ -558,7 +559,7 @@ ul.images-list {
 
     #navNotFixed .nav > li > a,
     #navNotFixed .nav > li > a:focus {
-        color: var(--NAVBAR-FIXED-BUTTON-COLOR, var(--GENERAL-LINK-COLOR-2));
+        color: var(--NAVBAR-FIXED-BUTTON-COLOR, var(--NAVBAR-BUTTON-COLOR));
     }
 
     #navNotFixed .nav > li > a:hover,
@@ -594,10 +595,11 @@ main {
     min-height: 100%;
 
     background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
+    /* -webkit-background-size: cover; */
+    /* -moz-background-size: cover; */
+    /* -o-background-size: cover; */
     background-size: cover;
-    -o-background-size: cover;
+
     text-align: center;
     color: var(--HOME-TITLE-COLOR, var(--GENERAL-FONT-COLOR-3));
 }
@@ -605,22 +607,49 @@ main {
 #home .header-content {
     position: relative;
     width: 100%;
-    padding: 100px 15px;
+    padding: 55vh 15px 0;
     text-align: center;
 }
+
+@media (min-aspect-ratio:8/3) {
+  #home {
+    min-height: 38vw;
+  }
+  #home .header-content {
+      padding: 21vw 15px 0;
+  }
+}
+
+/* too tall */
+@media (max-aspect-ratio:6/5) {
+  #home {
+    min-height: 80vw;
+  }
+  #home .header-content {
+    padding: 45vw 15px 0;
+  }
+}
+
 
 #home .header-content .header-content-inner h1 {
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 700;
+
+    /* color: var(--TITLE-FONT-COLOR); */
+    /* background: rgba(0, 0, 0, 0.2); */
+     text-shadow: -2px 0 4px black, 0 2px 4px black, 2px 0 4px black, 0 -2px 4px black;
+     /* text-shadow: 0 0 6px black; */
 }
 
 #home .header-content .header-content-inner h2 {
+     text-shadow: -2px 0 4px black, 0 2px 4px black, 2px 0 4px black, 0 -2px 4px black;
     font-weight: 600;
 }
 
 #home .header-content .header-content-inner hr {
     margin: 30px auto;
+    display: none;
 }
 
 #home .header-content .header-content-inner p {
@@ -630,29 +659,6 @@ main {
     color: var(--HOME-TEXT-COLOR, var(--GENERAL-FONT-COLOR-3));
 }
 
-@media(min-width: 768px) {
-    #home .header-content {
-        position: absolute;
-        top: 50%;
-        padding: 0 50px;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-    }
-
-    #home .header-content .header-content-inner {
-        margin-right: auto;
-        margin-left: auto;
-        max-width: 1000px;
-    }
-
-    #home .header-content .header-content-inner p {
-        margin-right: auto;
-        margin-left: auto;
-        max-width: 80%;
-        font-size: 18px;
-    }
-}
 
 /******************************************************************************/
 
@@ -666,6 +672,10 @@ main {
     color: var(--ABOUT-LINK-COLOR, var(--GENERAL-LINK-COLOR-2));
 }
 
+#about h2 {
+    color: var(--GENERAL-COLOR-1);
+}
+
 #about a:hover,
 #about a:focus {
     color: var(--ABOUT-LINK-COLOR-ACTIVE, var(--GENERAL-LINK-ACTIVE-COLOR-2));
@@ -676,12 +686,12 @@ main {
     border-radius: var(--ABOUT-IMAGE-BORDER-RADIUS, var(--GENERAL-IMAGE-BORDER-RADIUS));
 }
 
-#about .text-tertiary {
-    text-align: justify;
-}
-#about .text-tertiary p {
-    text-justify: inter-word;
-}
+/* #about .text-tertiary { */
+/*     text-align: justify; */
+/* } */
+/* #about .text-tertiary p { */
+/*     text-justify: inter-word; */
+/* } */
 
 /******************************************************************************/
 

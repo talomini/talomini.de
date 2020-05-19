@@ -29,26 +29,13 @@
                                 <li>
                                     <a class="page-scroll" href="#about">{{ $links.about }}</a>
                                 </li>
-                            {{ else if and (eq . "services") $links.services }}
-                                <li>
-                                    <a class="page-scroll" href="#services">{{ $links.services }}</a>
-                                </li>
-                            {{ else if and (eq . "skills") $links.skills }}
-                                <li>
-                                    <a class="page-scroll" href="#skills">{{ $links.skills }}</a>
-                                </li>
-                            {{ else if and (eq . "projects") $links.projects }}
-                                {{ $categories := $.context.Site.Params.projects.categories }}
-                                {{ range $links.projects }}
-                                    {{ if in $categories .section }}
-                                        <li>
-                                            <a class="page-scroll" href="#projects_{{ .section }}">{{ .label }}</a>
-                                        </li>
-                                    {{ end }}
-                                {{ end }}
                             {{ else if and (eq . "contact") $links.contact }}
                                 <li>
                                     <a class="page-scroll" href="#contact">{{ $links.contact }}</a>
+                                </li>
+                            {{ else if and (eq . "imprint") $links.imprint }}
+                                <li>
+                                    <a class="page-scroll" href="/impressum/">{{ $links.imprint }}</a>
                                 </li>
                             {{ end }}
                         {{ end }}

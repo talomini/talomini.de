@@ -1,11 +1,11 @@
 ---
-title: "CONTACT"
+title: "Kontakt"
 background_image: "banner_2.jpg"
 photo: "logo.png"
-description: "Very short text with a call to action."
+description: ""
 
 email:
-  address: "mail@talomini.de"
+  address: "talomini@web.de"
   link: false
   icon: "fa-envelope"
   icon-pack: "fas"
