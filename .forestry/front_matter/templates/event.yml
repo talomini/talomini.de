@@ -4,10 +4,10 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
 - type: datetime
   name: eventDate
-  label: eventDate
+  label: Datum
 - type: text
   name: eventLocation
-  label: eventLocation
+  label: Ort

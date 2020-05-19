@@ -2,7 +2,7 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: ''
-webhook_url: 
+webhook_url:
 sections:
 - type: document
   path: data/home.yaml
@@ -18,11 +18,29 @@ sections:
   label: Content
 - type: directory
   path: content/pages
-  label: Pages
-  create: all
+  label: Seiten
+  create: none
   match: "**/*"
   templates:
   - page
+- type: directory
+  path: content/posts
+  label: Posts
+  create: document
+  match: "**/*"
+  templates:
+  - post
+- type: directory
+  path: content/events
+  label: Veranstaltungen
+  create: document
+  match: "**/*"
+  templates:
+  - event
+- path: data/**/*
+  label: Data
+  create: none
+  hidden: true
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
