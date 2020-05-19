@@ -1,2 +1,4 @@
 User-agent: *
 Disall/impressum/
+
+sitemap: https://talomini.de/sitemap.xml
