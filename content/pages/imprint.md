@@ -1,10 +1,9 @@
 ---
 title: Impressum
----
 
-Vorname Nachname  
-Straße 1  
-00000 Saarbrücken
+---
+Josa Gesell  
+Burckhardstr. 62  
+70374 Stuttgart
 
 E-Mail: talomini@web.de
-
