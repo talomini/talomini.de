@@ -532,6 +532,7 @@ ul.images-list {
     .navbar-default.affix .nav > li.active > a:focus {
         color: var(--NAVBAR-BUTTON-ACTIVE-COLOR, var(--GENERAL-FONT-COLOR-2));
         background-color: var(--NAVBAR-BUTTON-ACTIVE-BACKGROUND-COLOR, transparent);
+        /* text-decoration: underline; */
     }
 }
 
