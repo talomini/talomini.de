@@ -4,15 +4,20 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: document
+  path: data/home.yaml
+  label: Titel
+  match: "**/*"
+- type: document
+  path: data/about.yaml
+  label: Über Uns
+- type: heading
+  label: Content
 - type: directory
   path: content
   label: Pages
   create: all
   match: "*"
-- type: document
-  path: data/about.yaml
-  label: Über Uns
-  match: "**/*"
 - type: directory
   path: content/posts
   label: Posts
