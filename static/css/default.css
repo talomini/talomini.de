@@ -10,6 +10,7 @@
 
     --GENERAL-COLOR-1:rgb(95, 118, 150);
     --GENERAL-COLOR-2: rgb(255, 255, 255);
+    --GENERAL-COLOR-2-light: rgb(223, 223, 223);
 
     --GENERAL-FONT-COLOR-1: black;
     --GENERAL-FONT-COLOR-2: var(--GENERAL-COLOR-1);

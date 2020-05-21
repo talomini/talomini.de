@@ -136,8 +136,13 @@ img::-moz-selection {
 }
 
 .text-tertiary {
+    color: var(--GENERAL-FONT-COLOR-2);
+}
+
+.bg-primary .text-tertiary {
     color: var(--GENERAL-FONT-COLOR-3);
 }
+
 
 /******************************************************************************/
 
@@ -388,6 +393,8 @@ ul.images-list {
 .profile .text-primary p {
     font-size: 1.5em;
     font-weight: 300;
+
+    color: var(--GENERAL-COLOR-2-light);
 }
 
 /******************************************************************************/
@@ -615,6 +622,7 @@ main {
 @media (min-aspect-ratio:8/3) {
   #home {
     min-height: 38vw;
+    height: 38vw;
   }
   #home .header-content {
       padding: 21vw 15px 0;
@@ -625,6 +633,7 @@ main {
 @media (max-aspect-ratio:6/5) {
   #home {
     min-height: 80vw;
+    height: 80vw;
   }
   #home .header-content {
     padding: 45vw 15px 0;
@@ -674,7 +683,7 @@ main {
 }
 
 #about h2 {
-    color: var(--GENERAL-COLOR-1);
+    color: var(--GENERAL-COLOR-2);
 }
 
 #about a:hover,
