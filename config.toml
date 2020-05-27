@@ -1,11 +1,14 @@
 baseURL = "https://talomini.de/"
 languageCode = "de-de"
-title = "Talomini"
+title = "Junges Musiktheater"
 
 [permalinks]
   pages = "/:slug/"
 
 [params]
+    description = "Das Saarbrücker Musiktheaterensemble vereint Gesang, Tanz, Instrumentalspiel und Szene in liebevollen Stücken für alle von 3 bis 99 Jahren."
+    images = ["images/banner.jpg"]
+
     [params.homepage]
         sections = [ "home", "about", "contact", "imprint" ]
 
