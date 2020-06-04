@@ -1,6 +1,6 @@
 ---
 title: Impressum
-
+sitemap_exclude: true
 ---
 Josa Gesell  
 Burckhardstr. 62  
