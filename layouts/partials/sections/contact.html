@@ -5,9 +5,9 @@
                 style="background-image: url('{{ (printf "images/%s" .) | absURL }}');"
             {{ end }}
         >
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-12">
                     {{ with .title }}
                         <h2 class="section-heading text-tertiary">{{ . }}</h2>
                         <hr class="primary">

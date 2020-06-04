@@ -24,6 +24,13 @@ sections:
   templates:
   - page
 - type: directory
+  path: content/team
+  label: Team
+  create: document
+  match: "**/*"
+  templates:
+  - team
+- type: directory
   path: content/posts
   label: Posts
   create: document
