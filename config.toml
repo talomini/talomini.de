@@ -32,3 +32,9 @@ title = "Junges Musiktheater Talomini"
         background_image = "404.jpg"
         button_text = ""
 
+[markup]
+  defaultMarkdownHandler = "goldmark"
+
+[markup.goldmark]
+[markup.goldmark.renderer]
+  unsafe = true
