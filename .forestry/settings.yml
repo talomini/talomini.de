@@ -31,6 +31,13 @@ sections:
   templates:
   - team
 - type: directory
+  path: content/plays
+  label: Stücke
+  create: document
+  match: "**/*"
+  templates:
+  - play
+- type: directory
   path: content/posts
   label: Posts
   create: document

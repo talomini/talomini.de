@@ -6,5 +6,5 @@
   HUGO_ENV = "production"
 
 [context.preview]
-  command = "hugo --gc --config config.toml,config.preview.toml --baseURL $DEPLOY_PRIME_URL/"
+  command = "hugo --gc --buildDrafts --config config.toml,config.preview.toml --baseURL $DEPLOY_PRIME_URL/"
 

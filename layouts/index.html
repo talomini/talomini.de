@@ -1,9 +1,7 @@
 {{ define "body" }}
     {{ partial "sections/home.html" . }}
     {{ partial "sections/about.html" . }}
-    {{ if .Site.Params.preview }}
-      {{ partial "sections/content.html" . }}
-    {{ end }}
+    {{ partial "sections/content.html" . }}
 
     {{ if .Site.Params.development }}
       {{ partial "sections/galleries.html" . }}

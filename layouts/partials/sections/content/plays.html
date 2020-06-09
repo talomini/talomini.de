@@ -1,0 +1,22 @@
+{{ with $.Site.GetPage "section" "plays" }}
+
+{{ partial "sections/content/title.html" . }}
+
+<div class="container">
+  {{ range (.Pages.ByParam "eventDate").Reverse }}
+    <div class="row play">
+      <div class="col-xs-12 col-md-4">
+        {{- $image := resources.Get .Params.image -}}
+        <a href="{{ .Permalink }}">
+          <img class="team-photo" src={{ ($image.Fill "440x440").Permalink }} />
+        </a>
+      </div>
+      <div class="col-xs-12 col-md-8">
+        <h3><a class="title" href="{{ .Permalink }}">{{ .Title }}</a></h3>
+        <div class="summary">{{ .Summary | safeHTML }}</div>
+      </div>
+    </div>
+  {{ end }}
+</div>
+{{ end }}
+

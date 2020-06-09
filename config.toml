@@ -4,6 +4,7 @@ title = "Junges Musiktheater Talomini"
 
 [permalinks]
   pages = "/:slug/"
+  plays = "/:slug/"
   team = "/:slug/"
 
 [params.meta]
