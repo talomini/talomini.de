@@ -1,6 +1,6 @@
 baseURL = "https://talomini.de/"
 languageCode = "de-de"
-title = "Junges Musiktheater"
+title = "Junges Musiktheater Talomini"
 
 [permalinks]
   pages = "/:slug/"
