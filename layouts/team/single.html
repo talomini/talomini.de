@@ -1,4 +1,5 @@
 {{ define "content" }}
+<div class="row">
     <div class="col-xs-12 col-md-4">
         {{- $image := resources.Get .Params.image -}}
         <img class="team-photo" src={{ ($image.Fill "440x440").Permalink }} />
@@ -6,5 +7,6 @@
     <div class="col-xs-12 col-md-8 text-tertiary">
         {{ .Content }}
     </div>
+</div>
 {{ end }}
 
