@@ -1,6 +1,10 @@
 [context.production]
-  command = "hugo"
+  command = "hugo --gc --minify"
+
+[context.production.environment]
+  HUGO_VERSION = "0.72.0"
+  HUGO_ENV = "production"
 
 [context.preview]
-  command = "hugo --config config.toml,config.preview.toml --baseURL $DEPLOY_PRIME_URL/"
+  command = "hugo --gc --config config.toml,config.preview.toml --baseURL $DEPLOY_PRIME_URL/"
 
