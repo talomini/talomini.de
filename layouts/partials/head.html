@@ -22,12 +22,7 @@
 <link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon-16x16.png" | absURL }}">
 
 <link rel="stylesheet" href="{{ "plugins/bootstrap/css/bootstrap.min.css" | absURL }}" type="text/css">
-
-<!-- link rel='stylesheet' href='//fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' type='text/css' -->
-<!-- link rel="stylesheet" href="//fonts.googleapis.com/css?family=Anton" -->
-<!-- link rel="stylesheet" href="//fonts.googleapis.com/css?family=Fjalla+One" -->
 <link rel="stylesheet" href="{{ "plugins/font-awesome/css/all.css" | absURL }}" type="text/css">
-
 
 {{ $styles := resources.Get "css/main.scss" | toCSS }}
 <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
