@@ -37,10 +37,12 @@
             <div class="row team">
                 {{ range ($.Site.GetPage "section" "team").Pages }}
                     {{- $image := resources.Get .Params.image -}}
-                    <a href="{{ .Permalink }}" class="col-xs-12 col-md-4 member">
-                        <img src={{ ($image.Fill "440x440").Permalink }} />
-                        <div class="name">{{ .Title }}</div>
-                    </a>
+                    <div class="col-xs-12 col-md-4 member">
+                      <a href="{{ .Permalink }}">
+                          <img src={{ ($image.Fill "440x440").Permalink }} />
+                          <div class="name">{{ .Title }}</div>
+                      </a>
+                    </div>
                   {{ end }}
             </div>
         </div>
