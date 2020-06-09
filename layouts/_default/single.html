@@ -1,8 +1,7 @@
 {{ define "content" }}
-    {{ with .Content}}
-        <div>
-          {{ . | markdownify }}
-          <hr>
+    <div class="row">
+        <div class="col-xs-12 col-md-8 text-tertiary">
+            {{ .Content  | markdownify }}
         </div>
-    {{ end }}
+    </div>
 {{ end }}

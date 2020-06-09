@@ -1,27 +1,12 @@
-<!DOCTYPE html>
-<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
-    <head>
-        {{ partial "head.html" . }}
-    </head>
-    <body id="page-top">
-        <header>
-            {{ partial "header.html" . }}
-        </header>
+{{ define "body" }}
+    {{ partial "sections/home.html" . }}
+    {{ partial "sections/about.html" . }}
+    {{ if .Site.Params.preview }}
+      {{ partial "sections/content.html" . }}
+    {{ end }}
 
-        {{ partial "sections/home.html" . }}
-        {{ partial "sections/about.html" . }}
-        {{ if .Site.Params.preview }}
-          {{ partial "sections/content.html" . }}
-        {{ end }}
-
-        {{ if .Site.Params.development }}
-          {{ partial "sections/galleries.html" . }}
-        {{ end }}
-        {{ partial "sections/contact.html" . }}
-
-        <footer>
-            {{ partial "footer.html" . }}
-        </footer>
-        {{ partial "tail.html" . }}
-    </body>
-</html>
+    {{ if .Site.Params.development }}
+      {{ partial "sections/galleries.html" . }}
+    {{ end }}
+    {{ partial "sections/contact.html" . }}
+{{ end }}

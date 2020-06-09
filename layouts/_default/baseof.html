@@ -5,29 +5,29 @@
     </head>
 
     <body id="page-top">
-        {{ block "header" . }}
-            <header>
-                {{ partial "nav.html" (dict "context" . "fixed" false) }}
-            </header>
-        {{ end }}
+        {{ partial "header.html" . }}
 
         {{ block "body" . }}
           <section class="section bg-primary content-block">
               <div class="container">
-                  <div class="row">
-                      <div class="col-md-12">
-                          <h2 class="section-heading">{{ .Title }}</h2>
-                          <hr class="primary light">
+                  {{ block "title" . }}
+                      <div class="row">
+                          <div class="col-md-12">
+                              <h2 class="section-heading">{{ .Title }}</h2>
+                              <hr class="primary light">
+                          </div>
                       </div>
-                  </div>
+                  {{ end }}
               </div>
 
               <div class="container">
-                  <div class="row">
-                      <div class="col-xs-12 col-md-8 text-tertiary">
-                          {{ .Content  | markdownify }}
+                  {{ block "content" . }}
+                      <div class="row">
+                          <div class="col-xs-12 col-md-8 text-tertiary">
+                              {{ .Content }}
+                          </div>
                       </div>
-                  </div>
+                  {{ end }}
               </div>
           </section>
         {{ end }}
