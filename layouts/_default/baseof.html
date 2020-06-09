@@ -34,11 +34,9 @@
           </section>
         {{ end }}
 
-        {{ block "footer" . }}
-            <footer>
-                {{ partial "footer.html" . }}
-            </footer>
-        {{ end }}
+        <footer>
+            {{ partial "footer.html" . }}
+        </footer>
 
         {{ block "tail" . }}
             {{ partial "tail.html" . }}
