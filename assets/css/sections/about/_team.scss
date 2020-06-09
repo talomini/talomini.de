@@ -1,0 +1,46 @@
+.member img, .team-photo {
+  display: block;
+  border-radius: 50%;
+
+  width: 200px;
+  height: 200px;
+
+  margin: 0 auto;
+
+  max-width: unset;
+}
+
+.member a {
+  display: block;
+}
+
+.member .name {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 300;
+  padding: 10px;
+}
+
+
+@media (max-width: 991px) {
+  .member {
+    padding: 10px;
+  }
+  .member a {
+    display: flex;
+  }
+  .member img {
+    margin: 0;
+    width: 120px;
+    height: 120px;
+
+  }
+  .member .name {
+    text-align: left;
+    padding: 0 10px;
+    line-height: 120px;
+  }
+}
+
+
+
