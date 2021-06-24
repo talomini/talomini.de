@@ -1,0 +1,11 @@
+---
+label: Stück
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: Titel
+- type: int
+  name: weight
+  label: Sortierung
+

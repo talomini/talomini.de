@@ -1,7 +1,7 @@
 ---
 title: Ein einziger Tag
 image: images/oneday/0000.jpg
-draft: true
+weight: -1
 ---
 
 "Ein einziger Tag" ist ein Musiktheater für Kinder über das Leben einer

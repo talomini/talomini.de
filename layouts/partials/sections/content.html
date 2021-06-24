@@ -1,8 +1,15 @@
 
-{{ if .Site.Params.preview }}
-  <section class="section content-block">
+{{ $hasContent := or
+  (gt (len ($.Site.GetPage "section" "plays").Pages) 0)
+}}
+
+{{ if $hasContent }}
+<section class="section content-block">
     {{ partial "sections/content/plays.html" . }}
+    {{ if .Site.Params.preview }}
     {{ partial "sections/content/events.html" . }}
     {{ partial "sections/content/posts.html" . }}
-  </section>
+    {{ end }}
+</section>
 {{ end }}
+

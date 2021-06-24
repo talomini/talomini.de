@@ -1,5 +1,7 @@
 {{ with $.Site.GetPage "section" "plays" }}
 
+{{ if gt (len .Pages) 0 }}
+
 {{ partial "sections/content/title.html" . }}
 
 <div class="container">
@@ -18,5 +20,7 @@
     </div>
   {{ end }}
 </div>
+
+{{ end }}
 {{ end }}
 
