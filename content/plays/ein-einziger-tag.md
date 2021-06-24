@@ -1,6 +1,6 @@
 ---
 title: Ein einziger Tag
-image: images/oneday/0000.jpg
+image: /uploads/oneday.jpg
 weight: -1
 ---
 
