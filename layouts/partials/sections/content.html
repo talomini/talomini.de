@@ -4,7 +4,7 @@
 }}
 
 {{ if $hasContent }}
-<section class="section content-block">
+<section id="content" class="section content-block">
     {{ partial "sections/content/plays.html" . }}
     {{ if .Site.Params.preview }}
     {{ partial "sections/content/events.html" . }}

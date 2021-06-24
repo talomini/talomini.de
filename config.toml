@@ -17,12 +17,13 @@ metaDataFormat = "yaml"
     images = ["images/banner.jpg"]
 
     [params.homepage]
-        sections = [ "home", "about", "contact", "imprint" ]
+        sections = [ "home", "about", "plays", "contact", "imprint" ]
 
     [params.navigation]
         brand = "Junges Musiktheater Talomini"
         [params.navigation.links]
             about    = "Über uns"
+            plays    = "Stücke"
             contact  = "Kontakt"
             imprint  = "Impressum"
 
