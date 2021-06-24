@@ -1,11 +1,15 @@
 ---
-label: Page
+label: Team
 hide_body: false
 fields:
 - type: text
   name: title
   label: Title
+  config:
+    required: true
 - type: text
   name: image
   label: Image
+  config:
+    required: true
 

@@ -5,9 +5,13 @@ fields:
 - type: text
   name: title
   label: Title
+  config:
+    required: true
 - type: datetime
   name: eventDate
   label: Datum
+  config:
+    required: true
 - type: text
   name: eventLocation
   label: Ort
