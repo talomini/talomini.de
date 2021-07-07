@@ -2,7 +2,7 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: ''
-webhook_url:
+webhook_url: 
 sections:
 - type: document
   path: data/home.yaml
@@ -13,7 +13,6 @@ sections:
 - type: document
   path: data/contact.yaml
   label: Kontakt
-  match: "**/*"
 - type: heading
   label: Content
 - type: directory
@@ -26,37 +25,26 @@ sections:
 - type: directory
   path: content/team
   label: Team
-  create: document
+  create: all
   match: "**/*"
   templates:
   - team
 - type: directory
   path: content/plays
   label: Stücke
-  create: document
+  create: all
   match: "**/*"
   templates:
   - play
 - type: directory
-  path: content/posts
-  label: Posts
-  create: document
-  match: "**/*"
-  templates:
-  - post
-- type: directory
   path: content/events
   label: Veranstaltungen
-  create: document
+  create: all
   match: "**/*"
   templates:
   - event
-- path: data/**/*
-  label: Data
-  create: none
-  hidden: true
 upload_dir: assets/uploads
-public_path: "uploads"
+public_path: uploads
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"

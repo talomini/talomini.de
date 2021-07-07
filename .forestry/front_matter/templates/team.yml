@@ -12,4 +12,3 @@ fields:
   label: Image
   config:
     required: true
-
