@@ -30,11 +30,11 @@
       </div>
 
       <div class="event-title">
-        {{ if .Site.Params.preview }}
+        {{ if ne .Content "" }}
         <a class="title" href="{{ .Permalink }}">{{ .Title }}</a>
         <div class="meta">{{ .Params.EventDate }}</div>
         {{ else }}
-        <span class="title" href="{{ .Permalink }}">{{ .Title }}</span>
+        <span class="title">{{ .Title }}</span>
         <div class="meta">{{ partial "date.html" .Params.EventDate }} - {{ .Params.Location }}</div>
         {{ end }}
       </div>
