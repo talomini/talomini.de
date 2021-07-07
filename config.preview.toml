@@ -1,3 +1,8 @@
 [params]
   preview = true
   buildDrafts = true
+
+[markup.goldmark]
+[markup.goldmark.renderer]
+  unsafe = true
+
