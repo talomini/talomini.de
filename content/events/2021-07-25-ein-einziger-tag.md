@@ -1,5 +1,6 @@
 ---
-title: '"Ein einziger Tag" - Ini-Art Festival - open air'
-eventDate:  2021-07-25 # 10Uhr
+title: '"Ein einziger Tag"'
+eventDate:  "2021-07-25T10:00:00"
+location: Ini-Art Festival - open air
 ---
 

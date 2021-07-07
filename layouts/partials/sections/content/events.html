@@ -11,21 +11,34 @@
 
 {{ partial "sections/content/title.html" . }}
 
+{{ $lastMonth := "" }}
+
 <div class="container col-md-offset-2">
   <div class="row">
     {{ range $events }}
-    <div class="event">
+
+    {{ $currentMonth := (dateFormat "2006-01" (time .Params.EventDate)) }}
+
+    <div class="col-xs-12 col-md-8 event {{ if ne $currentMonth $lastMonth }}next-month{{ end }}">
       <div class="event-date">
-        <span class="month">
-          {{ partial "month.html" (time .Params.EventDate) }}</span>
+        {{ if ne $currentMonth $lastMonth }}
+        <span class="month">{{ partial "month.html" (time .Params.EventDate) }}</span>
         <span class="year">{{ dateFormat "2006" (time .Params.EventDate) }}</span>
+        {{ end }}
       </div>
 
       <div class="event-title">
+        {{ if .Site.Params.preview }}
         <a class="title" href="{{ .Permalink }}">{{ .Title }}</a>
         <div class="meta">{{ .Params.EventDate }}</div>
+        {{ else }}
+        <span class="title" href="{{ .Permalink }}">{{ .Title }}</span>
+        <div class="meta">{{ partial "date.html" .Params.EventDate }} - {{ .Params.Location }}</div>
+        {{ end }}
       </div>
     </div>
+
+    {{ $lastMonth = $currentMonth }}
     {{ end }}
   </div>
 </div>

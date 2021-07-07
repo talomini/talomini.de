@@ -1,4 +1,3 @@
 ---
 title: Termine
-draft: true
 ---

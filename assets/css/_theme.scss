@@ -1151,10 +1151,14 @@ ul.project-item-list {
   display: flex;
   justify-content: flex-start;
   padding: 12px 0 10px 0;
+
+  &.next-month:not(:first-child) {
+    margin-top: 24px;
+  }
 }
 
 .event-date {
-  margin: 0 12px 0 0;
+  margin: 0 24px 0 0;
   width: 64px;
 
   flex: none;
@@ -1189,12 +1193,14 @@ ul.project-item-list {
   padding-top: 5px;
 }
 
+.event-title > span,
 .event-title > a {
       font-weight: 600;
       font-size: 14px;
 }
 
 
+.event-title > span,
 .event-title > a,
 .event-title > a:hover,
 .event-title > a:active {

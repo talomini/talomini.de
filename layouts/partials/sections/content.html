@@ -6,8 +6,8 @@
 {{ if $hasContent }}
 <section id="content" class="section content-block">
     {{ partial "sections/content/plays.html" . }}
-    {{ if .Site.Params.preview }}
     {{ partial "sections/content/events.html" . }}
+    {{ if .Site.Params.preview }}
     {{ partial "sections/content/posts.html" . }}
     {{ end }}
 </section>

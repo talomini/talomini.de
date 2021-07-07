@@ -1,0 +1,7 @@
+{{ $dateTime := (time .) }}
+{{ $isDate := eq (len (findRE "^\\d{4}-\\d{2}-\\d{2}$" .)) 1 }}
+{{ if $isDate }}
+{{ dateFormat "02.01.2006" $dateTime }}
+{{ else }}
+{{ dateFormat "02.01.2006 15:04 Uhr" $dateTime }}
+{{ end }}
