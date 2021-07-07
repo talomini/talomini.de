@@ -33,6 +33,10 @@
                                 <li>
                                     <a class="page-scroll" href="#content">{{ $links.plays }}</a>
                                 </li>
+                            {{ else if and (eq . "events") $links.events }}
+                                <li>
+                                    <a class="page-scroll" href="#content-events">{{ $links.events }}</a>
+                                </li>
                             {{ else if and (eq . "contact") $links.contact }}
                                 <li>
                                     <a class="page-scroll" href="#contact">{{ $links.contact }}</a>
