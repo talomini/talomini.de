@@ -1,0 +1,5 @@
+{{ with .Month }}
+{{ index site.Data.months (printf "%d" .) }}
+{{ else }}
+{{ errorf "A date needs to be passed to month partial" }}
+{{ end }}
