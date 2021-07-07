@@ -19,6 +19,8 @@ body {
     width: 100%;
     height: 100%;
 
+    overflow-x: hidden;
+
     font-family: var(--GENERAL-FONT, var(--GENERAL-FONT-1));
 }
 
@@ -1052,7 +1054,7 @@ main {
 }
 .project-item-box .project-subtitle {
     margin-left: 1em;
-    font-size: 14px;
+    font-size: 16px;
 
     font-family: var(--PROJECTBOX-CATEGORY-FONT, var(--GENERAL-FONT-2));
     color: var(--GENERAL-FONT-COLOR-1);
@@ -1150,7 +1152,7 @@ ul.project-item-list {
 .event {
   display: flex;
   justify-content: flex-start;
-  padding: 12px 0 10px 0;
+  padding: 0 10px 0;
 
   &.next-month:not(:first-child) {
     margin-top: 24px;
@@ -1190,13 +1192,13 @@ ul.project-item-list {
 }
 
 .event-title {
-  padding-top: 5px;
+  padding: 17px 0 12px;
 }
 
 .event-title > span,
 .event-title > a {
       font-weight: 600;
-      font-size: 14px;
+      font-size: 16px;
 }
 
 
