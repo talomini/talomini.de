@@ -739,14 +739,16 @@ main {
   width: 100%;
 }
 
-.content-block a {
-    color: var(--ABOUT-LINK-COLOR, var(--GENERAL-LINK-COLOR-2));
-}
+// .content-block a {
+//     color: var(--ABOUT-LINK-COLOR, var(--GENERAL-LINK-COLOR-2));
+// }
 
-.content-block a:hover,
-.content-block a:focus {
-    color: var(--ABOUT-LINK-COLOR-ACTIVE, var(--GENERAL-LINK-ACTIVE-COLOR-2));
-}
+// .content-block a {
+//     &, &:hover, &:active, &:focus , &:visited{
+//         color: var(--ABOUT-LINK-COLOR, var(--GENERAL-LINK-COLOR-2));
+//         // color: var(--ABOUT-LINK-COLOR-ACTIVE, var(--GENERAL-LINK-ACTIVE-COLOR-2));
+//     }
+// }
 
 /******************************************************************************/
 
@@ -1193,6 +1195,17 @@ ul.project-item-list {
 
 .event-title {
   padding: 17px 0 12px;
+
+  &.linked:hover {
+      text-decoration: none;
+
+    > .title {
+      text-decoration: underline;
+    }
+    > .meta {
+      text-decoration: none;
+    }
+  }
 }
 
 .event-title > span,

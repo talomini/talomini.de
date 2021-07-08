@@ -21,6 +21,16 @@
 
     {{ $currentMonth := (dateFormat "2006-01" (time .Params.EventDate)) }}
 
+    {{ $link := "" }}
+    {{ $linkTarget := "_self" }}
+
+    {{ if and .Params.Link (ne .Params.Link "") }}
+    {{   $link = .Params.Link }}
+    {{   $linkTarget = "_blank" }}
+    {{ else if ne .Content "" }}
+    {{   $link = .Permalink }}
+    {{ end }}
+
     <div class="col-xs-12 col-md-8 event {{ if ne $currentMonth $lastMonth }}next-month{{ end }}">
       <div class="event-date">
         {{ if ne $currentMonth $lastMonth }}
@@ -29,15 +39,17 @@
         {{ end }}
       </div>
 
-      <div class="event-title">
-        {{ if ne .Content "" }}
-        <a class="title" href="{{ .Permalink }}">{{ .Title }}</a>
-        <div class="meta">{{ .Params.EventDate }}</div>
-        {{ else }}
+      {{ if (ne $link "") }}
+      <a class="event-title linked" href="{{ .Params.Link }}" target="{{ $linkTarget }}">
         <span class="title">{{ .Title }}</span>
         <div class="meta">{{ partial "date.html" .Params.EventDate }} - {{ .Params.Location }}</div>
-        {{ end }}
+      </a>
+      {{ else }}
+      <div class="event-title">
+        <span class="title">{{ .Title }}</span>
+        <div class="meta">{{ partial "date.html" .Params.EventDate }} - {{ .Params.Location }}</div>
       </div>
+      {{ end }}
     </div>
 
     {{ $lastMonth = $currentMonth }}
