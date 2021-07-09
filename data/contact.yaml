@@ -7,11 +7,9 @@ description: ""
 email:
   address: "talomini@web.de"
   link: false
-  icon: "fa-envelope"
-  icon-pack: "fas"
+  icon: "mail"
 
 social:
-- icon: "fa-facebook"
-  icon_pack: "fab"
+- icon: "facebook"
   link: "https://www.facebook.com/pg/TalominiSaarbruecken"
 ---

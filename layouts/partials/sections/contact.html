@@ -34,8 +34,7 @@
                                 <a href="mailto:{{ .address }}">
                                 {{ end }}
                                     {{ if .icon }}
-                                        {{ $pack := or .icon_pack "fa" }}
-                                        <i class="{{ $pack }} {{ .icon }}" aria-hidden="true">
+                                        <span class="icon icon-{{ .icon }}"></span>
                                     {{ end }}
                                     {{ .address }}
                                     </i>
@@ -50,7 +49,7 @@
                                 {{ $pack := or .icon_pack "fa" }}
                                 <li>
                                     <a itemprop="sameAs" href="{{ .link | safeURL }}" target="_blank" rel="noopener">
-                                        <i class="{{ $pack }} {{ .icon }} icon-x2 wow bounceIn"></i>
+                                        <span class="icon-2x icon-{{ .icon }}"></span>
                                     </a>
                                 </li>
                             {{ end }}
