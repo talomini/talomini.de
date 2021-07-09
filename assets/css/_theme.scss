@@ -1196,14 +1196,29 @@ ul.project-item-list {
 .event-title {
   padding: 17px 0 12px;
 
-  &.linked:hover {
-      text-decoration: none;
+  &.linked {
 
-    > .title {
-      text-decoration: underline;
+    > .title::after {
+        content: '';
+        display: inline-block;
+        background-image: url(/icons/icon-link.svg);
+        background-size: contain;
+        width: 12px;
+        height: 12px;
+        margin: 0 8px;
+        line-height: 1;
+        background-repeat: no-repeat;
     }
-    > .meta {
-      text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+
+      > .title {
+        text-decoration: underline;
+      }
+      > .meta {
+        text-decoration: none;
+      }
     }
   }
 }
