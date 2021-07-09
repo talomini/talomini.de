@@ -2,7 +2,6 @@
 title: Naumbalo - träum’ mal richtig hin…
 image: uploads/talomini-square.jpg
 weight: -2
-draft: true
 
 ---
 An diesem Abend wartet ein kleiner Kobold und öffnet die Tür zu Naumbalo, der fantastischen Welt der Träume.  
