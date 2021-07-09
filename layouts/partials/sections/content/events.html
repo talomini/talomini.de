@@ -23,10 +23,12 @@
 
     {{ $link := "" }}
     {{ $linkTarget := "_self" }}
+    {{ $linkRel := "" }}
 
     {{ if and .Params.Link (ne .Params.Link "") }}
     {{   $link = .Params.Link }}
     {{   $linkTarget = "_blank" }}
+    {{   $linkRel = "noreferrer" }}
     {{ else if ne .Content "" }}
     {{   $link = .Permalink }}
     {{ end }}
@@ -40,7 +42,7 @@
       </div>
 
       {{ if (ne $link "") }}
-      <a class="event-title linked" href="{{ .Params.Link }}" target="{{ $linkTarget }}">
+      <a class="event-title linked" href="{{ .Params.Link }}" target="{{ $linkTarget }}" rel="{{$linkRel}}">
         <span class="title">{{ .Title }}</span>
         <div class="meta">{{ partial "date.html" .Params.EventDate }} - {{ .Params.Location }}</div>
       </a>

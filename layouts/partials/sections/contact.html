@@ -34,7 +34,7 @@
                                 <a href="mailto:{{ .address }}">
                                 {{ end }}
                                     {{ if .icon }}
-                                        <span class="icon icon-{{ .icon }}"></span>
+                                        <span class="icon icon-{{ .icon }}" aria-label="{{ .icon }}"></span>
                                     {{ end }}
                                     {{ .address }}
                                     </i>
@@ -44,12 +44,12 @@
                             {{ end }}
                         </div>
 
-                        <ul class="icons-list" aria-hidden="true">
+                        <ul class="icons-list">
                             {{ range .social }}
                                 {{ $pack := or .icon_pack "fa" }}
                                 <li>
                                     <a itemprop="sameAs" href="{{ .link | safeURL }}" target="_blank" rel="noopener">
-                                        <span class="icon-2x icon-{{ .icon }}"></span>
+                                        <span class="icon-2x icon-{{ .icon }}" aria-label="{{ .icon }}"></span>
                                     </a>
                                 </li>
                             {{ end }}

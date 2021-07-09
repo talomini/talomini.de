@@ -10,7 +10,7 @@
       <div class="col-xs-12 col-md-4">
         {{- $image := resources.Get .Params.image -}}
         <a href="{{ .Permalink }}">
-          <img class="team-photo" src={{ ($image.Fill "440x440").Permalink }} alt="{{ .Title }}" aria-hidden="true" />
+          <img class="team-photo" src={{ ($image.Fill "440x440").Permalink }} alt="{{ .Title }}" />
         </a>
       </div>
       <div class="text col-xs-12 col-md-8">
