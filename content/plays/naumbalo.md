@@ -1,10 +1,10 @@
 ---
 title: Naumbalo - träum’ mal richtig hin…
-image: /uploads/oneday.jpg
+image: uploads/talomini_c_talomini-4-900x0.jpg
 weight: -2
 draft: true
----
 
+---
 An diesem Abend wartet ein kleiner Kobold und öffnet die Tür zu Naumbalo, der fantastischen Welt der Träume.  
 Und schon beginnt die aufregende Reise. Was gibt es dort zu entdecken? Zauberhafte Dinge, fabelhafte Wesen, wunderbare Gänsehaut, Grusel erleben. Hier scheint wirklich alles möglich zu sein! Doch ist da nicht schon wieder der Schatten?  
 „Naumbalo“ ist ein Musiktheater für Kinder über das Träumen, den Umgang mit Angst und den Mut sich auf Unbekanntes einzulassen.
