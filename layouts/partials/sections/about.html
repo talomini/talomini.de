@@ -35,7 +35,28 @@
         </div>
         <div class="container">
             <div class="row team">
-                {{ range ($.Site.GetPage "team").Pages }}
+                {{ range where ($.Site.GetPage "team").Pages "Params.guest" "!=" true }}
+                    {{- $image := resources.Get .Params.image -}}
+                    <div class="col-xs-12 col-md-4 member">
+                      <a href="{{ .Permalink }}">
+                          <img src={{ ($image.Fill "440x440").Permalink }} alt="{{ .Title }}" aria-hidden="true" />
+                          <div class="name">{{ .Title }}</div>
+                      </a>
+                    </div>
+                  {{ end }}
+            </div>
+        </div>
+        <div class="container">
+            <div class="row heading-guest">
+                <div class="col-md-12">
+                    {{ with .title }}
+                        <h2 class="section-heading">Gastkünstlerin</h2>
+                        <hr class="primary light">
+                    {{ end }}
+                </div>
+            </div>
+            <div class="row team">
+                {{ range where ($.Site.GetPage "team").Pages "Params.guest" "==" true }}
                     {{- $image := resources.Get .Params.image -}}
                     <div class="col-xs-12 col-md-4 member">
                       <a href="{{ .Permalink }}">

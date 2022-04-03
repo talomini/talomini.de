@@ -12,3 +12,9 @@ fields:
   label: Image
   config:
     required: true
+- type: boolean
+  name: guest
+  label: Gast
+  config:
+    required: false
+
