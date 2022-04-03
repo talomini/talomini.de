@@ -1,6 +1,6 @@
 ---
 title: Naumbalo - träum’ mal richtig hin…
-image: uploads/talomini-square.jpg
+image: uploads/naumbalo.jpg
 weight: -2
 
 ---
