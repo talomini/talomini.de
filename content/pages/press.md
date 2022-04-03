@@ -1,7 +1,7 @@
 ---
-title: Presse Kit
-draft: true
-
+title: Presse
+sitemap_exclude: true
+type: press
 ---
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
 tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At

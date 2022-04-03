@@ -34,6 +34,33 @@ collections:
         name: body
         widget: markdown
 
+  - name: articles
+    label: Artikel
+    summary: "{{date | date('YYYY-MM-DD')}} - {{title}} - {{source}}"
+    folder: content/articles
+    create: true
+    fields:
+      - label: Titel
+        name: title
+        widget: string
+      - label: Link
+        name: link
+        widget: string
+        required: false
+      - label: Veröffentlicht
+        name: date
+        widget: date
+        date_format: 'DD.MM.YYYY'
+      - label: Quelle
+        name: source
+        widget: string
+      - label: Bild
+        name: image
+        widget: image
+      - name: "sitemap_exclude"
+        widget: hidden
+        default: true
+
   - label: Seiten
     name: pages
     files:
@@ -93,7 +120,7 @@ collections:
           widget: image
 
   - name: event
-    label: Veranstaltungen
+    label: Termine
     folder: content/events
     create: true
     sortable_fields: ['eventDate']

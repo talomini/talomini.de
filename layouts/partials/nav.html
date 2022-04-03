@@ -1,4 +1,5 @@
 {{ $fixed := .fixed }}
+{{ $preview := .Site.Params.preview }}
 {{ with .context }}
     {{ if .Site.Params.navigation.links }}
         {{ "<!-- NAVIGATION -->" | safeHTML }}
@@ -41,6 +42,12 @@
                                 <li>
                                     <a class="page-scroll" href="#contact">{{ $links.contact }}</a>
                                 </li>
+                            {{ else if and (eq . "press") $links.press }}
+                                {{ if $preview  }}
+                                <li>
+                                    <a class="page-scroll" href="/presse/">{{ $links.press }}</a>
+                                </li>
+                                {{ end }}
                             {{ else if and (eq . "imprint") $links.imprint }}
                                 <li>
                                     <a class="page-scroll" href="/impressum/">{{ $links.imprint }}</a>

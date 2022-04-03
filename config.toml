@@ -19,7 +19,7 @@ enableRobotsTXT = true
     images = ["images/banner.jpg"]
 
     [params.homepage]
-        sections = [ "home", "about", "plays", "events", "contact", "imprint" ]
+        sections = [ "home", "about", "plays", "events", "contact", "press", "imprint" ]
 
     [params.navigation]
         brand = "Junges Musiktheater Talomini"
@@ -28,6 +28,7 @@ enableRobotsTXT = true
             plays    = "Stücke"
             events   = "Termine"
             contact  = "Kontakt"
+            press    = "Presse"
             imprint  = "Impressum"
 
 
