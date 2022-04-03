@@ -1247,6 +1247,15 @@ ul.project-item-list {
 }
 
 
+.bg-primary {
+  a,
+  a:hover,
+  a:active {
+    color: var(--GENERAL-FONT-COLOR-3);
+  }
+
+}
+
 img {
   max-width: 100%;
 }

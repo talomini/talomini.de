@@ -31,4 +31,6 @@ Musiktheater Talomini das Stück “Naumbalo – träum‘ mal richtig hin” 
 und 2021 bei den Musikfestspielen Saar uraufgeführt. Zudem arbeitet Sie seit
 2020 als Klavierdozentin an der städtischen Musikschule Sulzbach und übernimmt
 2022 die künstlerische Leitung des AWO Saarland Projekts "Den eigenen Rhythmus
-finden” unter Wehrdener Frauen und Mädchen füreinander. 
+finden” unter Wehrdener Frauen und Mädchen füreinander.
+
+<a href="http://www.gunesoba.com" target="_blank">www.gunesoba.com</a>
