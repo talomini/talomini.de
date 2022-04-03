@@ -1,20 +1,22 @@
 {{ define "content" }}
 <div class="row">
+    {{ if .Params.image }}
+    {{- $image := resources.Get .Params.image -}}
     <div class="col-xs-12 col-md-4">
-        {{- $image := resources.Get .Params.image -}}
         <img class="team-photo" src={{ ($image.Fill "440x440").Permalink }} />
     </div>
-    <div class="col-xs-12 col-md-8 text-tertiary">
-        {{ .Content }}
-    </div>
+    {{ end }}
 
+     <div class="col-xs-12 col-md-8 text-tertiary">
+        {{ .Content | markdownify }}
+     </div>
 </div>
 
+{{ $play_name := .File.TranslationBaseName }}
 <div class="row team" style="margin-top: 100px;">
-    {{ $plays := .Params.plays }}
-    {{ range $play := ($.Site.GetPage "plays").Pages }}
-        {{ if in $plays $play.File.TranslationBaseName }}
-            {{- $image := resources.Get $play.Params.image  -}}
+    {{ range $member := ($.Site.GetPage "team").Pages }}
+        {{ if in $member.Params.plays $play_name }}
+            {{- $image := resources.Get $member.Params.image  -}}
             <div class="col-xs-12 col-md-4 member">
               <a href="{{ .Permalink }}">
                   <img src={{ ($image.Fill "440x440").Permalink }} alt="{{ .Title }}" aria-hidden="true" />
@@ -24,5 +26,6 @@
         {{ end }}
     {{ end }}
 </div>
+
 {{ end }}
 

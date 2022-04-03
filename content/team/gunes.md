@@ -2,6 +2,7 @@
 title: Güneş Oba
 image: images/team/guenes.jpg
 guest: true
+plays: ['naumbalo']
 ---
 
 Güneş Oba (Pianistin, freie Künstlerin, Musikpädagogin), geboren 1995, wuchs in
