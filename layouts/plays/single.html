@@ -12,20 +12,35 @@
      </div>
 </div>
 
-{{ $play_name := .File.TranslationBaseName }}
+{{ $play_name := .File.ContentBaseName }}
+
 <div class="row team" style="margin-top: 100px;">
     {{ range $member := ($.Site.GetPage "team").Pages }}
         {{ if in $member.Params.plays $play_name }}
             {{- $image := resources.Get $member.Params.image  -}}
             <div class="col-xs-12 col-md-4 member">
-              <a href="{{ .Permalink }}">
+                <a href="{{ .Permalink }}" class="glightbox" data-gallery="gallery1">
                   <img src={{ ($image.Fill "440x440").Permalink }} alt="{{ .Title }}" aria-hidden="true" />
                   <div class="name">{{ .Title }}</div>
-              </a>
+                </a>
             </div>
         {{ end }}
     {{ end }}
 </div>
 
+{{ with .Page.Resources.ByType "image" }}
+    <div class="row play-gallery">
+        {{ range . }}
+            <a href="{{ .Permalink }}" class="play-gallery__item">
+                <img src={{ (.Fill "320x320").Permalink }} alt="{{ .Title }}" aria-hidden="true" />
+            </a>
+
+        {{ end }}
+    </div>
+    <script type="text/javascript">
+        GLightbox({ selector: '.play-gallery__item' });
+    </script>
+{{ end }}
+</div>
 {{ end }}
 

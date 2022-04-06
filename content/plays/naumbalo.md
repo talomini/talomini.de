@@ -1,17 +1,0 @@
----
-title: Naumbalo - träum’ mal richtig hin…
-image: uploads/naumbalo.jpg
-weight: -2
-
----
-An diesem Abend wartet ein kleiner Kobold und öffnet die Tür zu Naumbalo, der fantastischen Welt der Träume.  
-Und schon beginnt die aufregende Reise. Was gibt es dort zu entdecken? Zauberhafte Dinge, fabelhafte Wesen, wunderbare Gänsehaut, Grusel erleben. Hier scheint wirklich alles möglich zu sein! Doch ist da nicht schon wieder der Schatten?  
-„Naumbalo“ ist ein Musiktheater für Kinder über das Träumen, den Umgang mit Angst und den Mut sich auf Unbekanntes einzulassen.
-
-<!--more-->
-
-Vom Barock über traditionelle Volksmusik unterschiedlicher Kulturen bis hin zu experimenteller Musik und selbstkomponierten und - arrangierten Stücken; das Ensemble liebt die Vielfalt und vereint in ihren Stücken ein- und mehrstimmigen Gesang, Instrumentalspiel, Tanz, Bewegung und Improvisation. Mit Liebe zum Detail und einer großen Portion Kreativität zaubern sie ihren kleinen und großen Gästen ein Lächeln ins Gesicht, das weit über die Aufführung hinausstrahlt. „Musik mit allen Sinnen erleben“ wird hier groß geschrieben und so nehmen die Zuschauer nicht nur den beobachtenden Posten ein, sondern werden durch Mitmachaktionen Teil der Aufführung.  
-
-Alle von 3 bis 99 Jahren sind herzlich eingeladen, mit dem Kobold ins Land der Träume einzutauchen.  „Komm mit nach Naumbalo - und träum’ mal richtig hin!“
-
-Für ihr neues Stück „Naumbalo - träum’ mal richtig hin…“ konnte Talomini die Musikerin Güneş Oba gewinnen. Als ausgebildete Pianistin und Elementare Musikpädagogin (Hochschule für Musik Saar) bereichert sie das Ensemble bei der Konzeption und Umsetzung des Stückes.  „Naumbalo“ wird von Miriam Gehring, Katharina Gesell und Güneş Oba dargeboten.

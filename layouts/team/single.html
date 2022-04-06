@@ -13,7 +13,7 @@
 <div class="row team" style="margin-top: 100px;">
     {{ $plays := .Params.plays }}
     {{ range $play := ($.Site.GetPage "plays").Pages }}
-        {{ if in $plays $play.File.TranslationBaseName }}
+        {{ if in $plays $play.File.ContentBaseName }}
             {{- $image := resources.Get $play.Params.image  -}}
             <div class="col-xs-12 col-md-4 member">
               <a href="{{ .Permalink }}">
