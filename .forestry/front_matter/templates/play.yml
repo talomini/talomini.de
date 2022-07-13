@@ -20,4 +20,5 @@ fields:
   config:
     required: true
 pages:
+- content/plays/GemEinsam/gemeinsam.md
 - content/plays/gemeinsam.md
