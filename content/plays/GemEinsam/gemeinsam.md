@@ -1,6 +1,6 @@
 ---
 title: GemEinsam
-weight: -3
+weight: -1
 image: uploads/gemeinsam_a2_tiv.jpg
 
 ---
