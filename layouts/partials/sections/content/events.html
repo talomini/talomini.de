@@ -1,64 +1,40 @@
 {{ with $.Site.GetPage "events" }}
 
 {{ $events := (slice) }}
+{{ $events_past := (slice) }}
 {{ range (.Pages.ByParam "eventDate") }}
 {{ if (time .Params.EventDate).After ((time (dateFormat "2006-01-02" now)).AddDate 0 0 -1) }}
-{{ $events = $events | append . }}
+{{   $events = $events | append . }}
+{{ else }}
+{{   $events_past = $events_past | append . }}
 {{ end }}
 {{ end }}
-
-{{ if gt (len $events) 0 }}
 
 <div id="content-events"></div>
 
 {{ partial "sections/content/title.html" . }}
 
-{{ $lastMonth := "" }}
-
 <div class="container col-md-offset-2">
   <div class="row">
-    {{ range $events }}
-
-    {{ $currentMonth := (dateFormat "2006-01" (time .Params.EventDate)) }}
-
-    {{ $link := "" }}
-    {{ $linkTarget := "_self" }}
-    {{ $linkRel := "" }}
-
-    {{ if and .Params.Link (ne .Params.Link "") }}
-    {{   $link = .Params.Link }}
-    {{   $linkTarget = "_blank" }}
-    {{   $linkRel = "noreferrer" }}
-    {{ else if ne .Content "" }}
-    {{   $link = .Permalink }}
+    {{ if gt (len $events) 0 }}
+      {{ partial "sections/content/events_list.html" $events }}
+    {{ else }}
+      <div class="events-empty">Momentan sind leider keine Veranstaltungen geplant.</div>
     {{ end }}
 
-    <div class="col-xs-12 col-md-8 event {{ if ne $currentMonth $lastMonth }}next-month{{ end }}">
-      <div class="event-date">
-        {{ if ne $currentMonth $lastMonth }}
-        <span class="month">{{ partial "month.html" (time .Params.EventDate) }}</span>
-        <span class="year">{{ dateFormat "2006" (time .Params.EventDate) }}</span>
-        {{ end }}
-      </div>
-
-      {{ if (ne $link "") }}
-      <a class="event-title linked" href="{{ .Params.Link }}" target="{{ $linkTarget }}" rel="{{$linkRel}}">
-        <span class="title">{{ .Title }}</span>
-        <div class="meta">{{ partial "date.html" .Params.EventDate }} - {{ .Params.Location }}</div>
-      </a>
-      {{ else }}
-      <div class="event-title">
-        <span class="title">{{ .Title }}</span>
-        <div class="meta">{{ partial "date.html" .Params.EventDate }} - {{ .Params.Location }}</div>
-      </div>
+    <details class="events-past" {{ if eq (len $events) 0 }}open{{ end }}>
+      <summary>
+      {{ if gt (len $events) 0 }}
+        <span class="handle-show">Vergangene Termine zeigen</span>
+        <span class="handle-hide">Vergangene Termine ausblenden</span>
       {{ end }}
-    </div>
+      </summary>
 
-    {{ $lastMonth = $currentMonth }}
-    {{ end }}
+      {{ partial "sections/content/events_list.html" $events_past.Reverse }}
+    </details>
+
   </div>
 </div>
 {{ end }}
 
-{{ end }}
 

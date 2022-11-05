@@ -1246,6 +1246,32 @@ ul.project-item-list {
 
 }
 
+.events-empty {
+    padding: 10px;
+    // margin: 10px 0 0 90px;
+}
+
+.events-past {
+    clear: both;
+}
+
+.events-past[open] summary .handle-show {
+    display: none;
+}
+
+.events-past:not([open]) .handle-hide {
+    display: none;
+}
+
+
+.events-past summary {
+    user-select: none;
+    padding: 10px;
+    margin: 10px 0 0 90px;
+    cursor: pointer;
+    color: #337ab7;
+}
+
 
 .bg-primary {
   a,
