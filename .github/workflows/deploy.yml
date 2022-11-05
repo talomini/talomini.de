@@ -1,0 +1,17 @@
+name: Deploy
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 1 * * *'
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v3
+        with: { node-version: 16 }
+      - run: npm install -g netlify-cli
+      - run: netlify deploy --trigger --site talomini.de
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+
