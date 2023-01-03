@@ -21,6 +21,7 @@ fields:
   name: link
   label: Link
 pages:
+- content/events/ein-einziger-tag-1.md
 - content/events/ein-einziger-tag.md
 - content/events/gemeinsam-kita-vorstellung-1.md
 - content/events/gemeinsam-kita-vorstellung.md
