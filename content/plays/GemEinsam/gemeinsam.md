@@ -1,7 +1,8 @@
 ---
 title: GemEinsam
 weight: -3
-image: uploads/gemeinsam_a2_tiv.jpg
+image: uploads/p1011886.JPG
+draft: true
 
 ---
 Wie fühlt sich das Zusammensein an? Und wie das Alleinsein? Gibt es Einsamkeit unter Vielen? Kann man allein und (nicht) einsam sein?
