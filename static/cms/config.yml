@@ -5,9 +5,8 @@ backend:
 local_backend: true
 # > npx netlify-cms-proxy-server
 
-
-media_folder: "assets/uploads"
-public_folder: "/uploads"
+media_folder: assets/uploads
+public_folder: /uploads
 
 collections:
 
@@ -26,87 +25,98 @@ collections:
         name: guest
         widget: boolean
         required: false
-      - label: "Stücke"
-        name: "plays"
-        widget: "select"
+      - label: Stücke
+        name: plays
+        widget: select
         multiple: true
         options: ['ein-einziger-tag', 'naumbalo', 'GemEinsam']
-      - label: "Text"
-        name: "body"
-        widget: "markdown"
+      - label: Text
+        name: body
+        widget: markdown
 
-  - label: "Seiten"
-    name: "pages"
+  - label: Seiten
+    name: pages
     files:
-      - label: "Über uns"
-        name: "about"
-        file: "data/about.yaml"
+      - label: Über uns
+        name: about
+        file: data/about.yaml
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Kurz, name: short_text, widget: markdown}
-          - {label: Lang, name: long_text, widget: markdown}
+          - label: Titel
+            name: title
+            widget: string
+          - label: Kurz
+            name: short_text
+            widget: markdown
+          - label: Lang
+            name: long_text
+            widget: markdown
 
-      - label: "Impressum"
-        name: "impress"
-        file: "content/pages/imprint.md"
+      - label: Impressum
+        name: impress
+        file: content/pages/imprint.md
         fields:
-        - label: Title
+        - label: Titel
           name: title
           widget: string
-        - label: "Text"
-          name: "body"
-          widget: "markdown"
-        - {name: "sitemap_exclude", widget: "hidden", default: true}
+        - label: Text
+          name: body
+          widget: markdown
+        - name: "sitemap_exclude"
+          widget: hidden
+          default: true
 
   - name: play
     label: Stücke
     folder: content/plays
     create: true
     fields:
-      - label: "Title"
-        name: "title"
-        widget: "string"
-      - name: image
-        label: Image
+      - label: Titel
+        name: title
+        widget: string
+      - label: Bild
+        name: image
         widget: image
-      - name: weight
-        label: Sortierung
+      - label: Sortierung
+        name: weight
         widget: number
-        value_type: "int"
+        value_type: int
         min: -10
         max: -1
         step: 1
-      - label: "Images"
-        name: "images"
-        widget: "list"
+      - label: Bilder
+        name: images
+        widget: list
         summary: '{{fields.image}}'
-        field: {label: Image, name: image, widget: image}
+        field:
+          label: Image
+          name: image
+          widget: image
 
-  - name: "event"
-    label: "Veranstaltungen"
-    folder: "content/events"
+  - name: event
+    label: Veranstaltungen
+    folder: content/events
     create: true
     sortable_fields: ['eventDate']
     summary: "{{eventDate | date('YYYY-MM-DD')}}: {{title}}"
     fields:
-      - label: "Title"
-        name: "title"
-        widget: "string"
-      - label: "Datum"
-        name: "eventDate"
-        widget: "datetime"
+      - label: Titel
+        name: title
+        widget: string
+      - label: Datum
+        name: eventDate
+        widget: datetime
         date_format: 'DD.MM.YYYY'
         time_format: 'HH:MM'
-      - label: "Veranstaltungsort"
-        name: "location"
-        widget: "string"
-      - label: "Link"
-        name: "link"
-        widget: "string"
+      - label: Veranstaltungsort
+        name: location
+        widget: string
+      - label: Link
+        name: link
+        widget: string
         required: false
-      - label: "Text"
+      - label: Text
         hint: Nur sichtbar für Veranstaltungen ohne Link
-        name: "body"
-        widget: "markdown"
+        name: body
+        widget: markdown
         required: false
 
