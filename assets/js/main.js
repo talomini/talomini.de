@@ -3,6 +3,10 @@ import '../plugins/jquery/jquery.easing.min.js';
 
 import $ from '../plugins/jquery/jquery.js';
 
+const query = document.querySelector.bind(document)
+const queryAll = document.querySelectorAll.bind(document)
+const on = (el, event, fn) => el.addEventListener(event, fn)
+
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $('a.page-scroll').bind('click', function(event) {
     var $anchor = $(this);
@@ -19,9 +23,11 @@ $('body').scrollspy({
 })
 
 // Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function() {
-    $('.navbar-toggle:visible').click();
-});
+queryAll('.navbar-collapse ul li a').forEach((a) => {
+    on(a, 'click', () => {
+        query('.navbar-toggle:not(.collapsed)')?.click()
+    })
+})
 
 // Offset for Main Navigation
 $('#navFixed').affix({
