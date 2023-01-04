@@ -30,6 +30,3 @@
 <link rel="stylesheet" href="{{ $css_bootstrap.Permalink }}" integrity="{{ $css_bootstrap.Data.Integrity }}">
 {{ $css_main := resources.Get "css/main.scss" | toCSS | resources.Fingerprint "sha512" -}}
 <link rel="stylesheet" href="{{ $css_main.Permalink }}" integrity="{{ $css_main.Data.Integrity }}">
-
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-

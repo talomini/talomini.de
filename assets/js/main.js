@@ -39,10 +39,20 @@ $('#navFixed').affix({
     }
 })
 
-window.netlifyIdentity?.on("init", user => {
-  if (!user) {
-    window.netlifyIdentity.on("login", () => {
-      document.location.href = "/cms/";
-    });
-  }
-});
+
+// handle invites
+// https://talomini.de/#invite_token=xxxxxxxxxxxxxxxxxxxxxx
+if (location.hash.startsWith('#invite_token=')) {
+     document.head.appendChild(Object.assign(document.createElement('script'), {
+        src: 'https://identity.netlify.com/v1/netlify-identity-widget.js',
+        obeload: () => {
+            window.netlifyIdentity?.on("init", user => {
+                if (!user) {
+                    window.netlifyIdentity.on("login", () => {
+                        document.location.href = "/cms/";
+                    });
+                }
+            });
+        },
+    }));
+}
