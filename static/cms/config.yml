@@ -10,30 +10,52 @@ media_folder: "assets/uploads"
 public_folder: "/uploads"
 
 collections:
-  - name: "event"
-    label: "Veranstaltung"
-    folder: "content/events"
-    create: true
-    sortable_fields: ['eventDate']
-    summary: "{{eventDate | date('YYYY-MM-DD')}}: {{title}}"
+
+  - name: team
+    label: Künstler
+    folder: content/team
+    create: false
     fields:
-      - label: "Title"
-        name: "title"
-        widget: "string"
-      - label: "Datum"
-        name: "eventDate"
-        widget: "datetime"
-      - label: "Veranstaltungsort"
-        name: "location"
-        widget: "string"
-      - label: "Link"
-        name: "link"
-        widget: "string"
+      - label: Name
+        name: title
+        widget: string
+      - label: Bild
+        name: image
+        widget: image
+      - label: Gast
+        name: guest
+        widget: boolean
         required: false
+      - label: "Stücke"
+        name: "plays"
+        widget: "select"
+        multiple: true
+        options: ['ein-einziger-tag', 'naumbalo', 'GemEinsam']
       - label: "Text"
         name: "body"
         widget: "markdown"
-        required: false
+
+  - label: "Seiten"
+    name: "pages"
+    files:
+      - label: "Über uns"
+        name: "about"
+        file: "data/about.yaml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Kurz, name: short_text, widget: markdown}
+          - {label: Lang, name: long_text, widget: markdown}
+
+      - label: "Impressum"
+        name: "impress"
+        file: "content/pages/imprint.md"
+        fields:
+        - label: Title
+          name: title
+          widget: string
+        - label: "Text"
+          name: "body"
+          widget: "markdown"
 
   - name: play
     label: Stücke
@@ -59,49 +81,29 @@ collections:
         summary: '{{fields.image}}'
         field: {label: Image, name: image, widget: image}
 
-  - label: "Seiten"
-    name: "pages"
-    files:
-      - label: "Über uns"
-        name: "about"
-        file: "data/about.yaml"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Kurz, name: short_text, widget: markdown}
-          - {label: Lang, name: long_text, widget: markdown}
-
-      - label: "Impressum"
-        name: "impress"
-        file: "content/pages/imprint.md"
-        fields:
-        - label: Title
-          name: title
-          widget: string
-        - label: "Text"
-          name: "body"
-          widget: "markdown"
-
-  - name: team
-    label: Künstler
-    folder: content/team
-    create: false
+  - name: "event"
+    label: "Veranstaltungen"
+    folder: "content/events"
+    create: true
+    sortable_fields: ['eventDate']
+    summary: "{{eventDate | date('YYYY-MM-DD')}}: {{title}}"
     fields:
-      - label: Name
-        name: title
-        widget: string
-      - label: Bild
-        name: image
-        widget: image
-      - label: Gast
-        name: guest
-        widget: boolean
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Datum"
+        name: "eventDate"
+        widget: "datetime"
+      - label: "Veranstaltungsort"
+        name: "location"
+        widget: "string"
+      - label: "Link"
+        name: "link"
+        widget: "string"
         required: false
-      - label: "Stücke"
-        name: "plays"
-        widget: "select"
-        multiple: true
-        options: ['ein-einziger-tag', 'naumbalo', 'GemEinsam']
       - label: "Text"
+        hint: Nur sichtbar für Veranstaltungen ohne Link
         name: "body"
         widget: "markdown"
+        required: false
 
