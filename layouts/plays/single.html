@@ -17,11 +17,11 @@
 <div class="row team" style="margin-top: 100px;">
     {{ range $member := ($.Site.GetPage "team").Pages }}
         {{ if in $member.Params.plays $play_name }}
-            {{- $image := resources.Get $member.Params.image  -}}
+        {{- $image := resources.Get $member.Params.image -}}
             <div class="col-xs-12 col-md-4 member">
-                <a href="{{ .Permalink }}" class="glightbox" data-gallery="gallery1">
-                  <img src={{ ($image.Fill "440x440 webp").Permalink }} alt="{{ .Title }}" aria-hidden="true" />
-                  <div class="name">{{ .Title }}</div>
+                <a href="{{ .Permalink }}">
+                    <img src={{ ($image.Fill "440x440 webp").Permalink }} alt="{{ .Title }}" aria-hidden="true" />
+                    <div class="name">{{ .Title }}</div>
                 </a>
             </div>
         {{ end }}
