@@ -1,7 +1,11 @@
 ---
 title: Katharina Gesell
 image: uploads/team_katharina.jpg
-plays: ['ein-einziger-tag', 'naumbalo']
+guest: false
+plays:
+  - ein-einziger-tag
+  - naumbalo
+  - GemEinsam
 ---
 
 **Katharina Gesell** (*1991) wuchs in Pforzheim auf und studierte an der
