@@ -4,3 +4,13 @@
 <script src="{{ "plugins/jquery/jquery.easing.min.js" | absURL }}"></script>
 <script src="{{ "plugins/jquery/jquery.fittext.js" | absURL }}"></script>
 <script src="{{ "js/theme.js" | absURL }}"></script>
+
+<script>
+window.netlifyIdentity?.on("init", user => {
+  if (!user) {
+    window.netlifyIdentity.on("login", () => {
+      document.location.href = "/cms/";
+    });
+  }
+});
+</script>

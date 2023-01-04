@@ -1,0 +1,102 @@
+backend:
+  name: git-gateway
+  branch: master
+
+# publish_mode: editorial_workflow
+
+media_folder: "assets/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "event"
+    label: "Veranstaltung"
+    folder: "content/events"
+    create: true
+    summary: "{{eventDate | date('YYYY-MM-DD')}}: {{title}}"
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Datum"
+        name: "eventDate"
+        widget: "datetime"
+      - label: "Veranstaltungsort"
+        name: "location"
+        widget: "string"
+      - label: "Link"
+        name: "link"
+        widget: "string"
+      - label: "Text"
+        name: "body"
+        widget: "markdown"
+
+  - name: play
+    label: Stücke
+    folder: content/plays
+    create: true
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - name: image
+        label: Image
+        widget: image
+      - name: weight
+        label: Sortierung
+        widget: number
+        value_type: "int"
+        min: -10
+        max: -1
+        step: 1
+      - label: "Images"
+        name: "images"
+        widget: "list"
+        summary: '{{fields.image}}'
+        field: {label: Image, name: image, widget: image}
+
+  - label: "Seiten"
+    name: "pages"
+    files:
+      - label: "Über uns"
+        name: "about"
+        file: "data/about.yaml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Kurz, name: short_text, widget: markdown}
+          - {label: Lang, name: long_text, widget: markdown}
+
+      - label: "Impressum"
+        name: "impress"
+        file: "content/pages/imprint.md"
+        fields:
+        - label: Title
+          name: title
+          widget: string
+        - label: "Text"
+          name: "body"
+          widget: "markdown"
+
+  - name: team
+    label: Künstler
+    folder: content/team
+    create: false
+    fields:
+      - label: Name
+        name: title
+        widget: string
+      - label: Bild
+        name: image
+        widget: image
+      - label: Gast
+        name: guest
+        widget: boolean
+        required: false
+      - label: "Stücke"
+        name: "plays"
+        widget: "select"
+        multiple: true
+        options: ['ein-einziger-tag', 'naumbalo', 'GemEinsam']
+      - label: "Text"
+        name: "body"
+        widget: "markdown"
+
