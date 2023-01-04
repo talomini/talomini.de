@@ -26,7 +26,5 @@
 <link rel="icon" type="image/png" sizes="96x96" href="{{ "favicon-96x96.png" | absURL }}">
 <link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon-16x16.png" | absURL }}">
 
-{{ $css_bootstrap := resources.Get "plugins/bootstrap/bootstrap.css" | resources.Fingerprint "sha512" -}}
-<link rel="stylesheet" href="{{ $css_bootstrap.Permalink }}" integrity="{{ $css_bootstrap.Data.Integrity }}">
 {{ $css_main := resources.Get "css/main.scss" | toCSS | resources.Fingerprint "sha512" -}}
 <link rel="stylesheet" href="{{ $css_main.Permalink }}" integrity="{{ $css_main.Data.Integrity }}">
