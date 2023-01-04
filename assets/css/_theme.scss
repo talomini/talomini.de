@@ -465,6 +465,14 @@ ul.images-list {
 
     font-family: var(--NAVBAR-FONT, var(--GENERAL-FONT-2));
     background-color: var(--NAVBAR-FIXED-BACKGROUND-COLOR, var(--GENERAL-COLOR-2));
+
+    &:not(.with-transitions) {
+        transition: none;
+
+        .navbar-brand {
+            transition: none;
+        }
+    }
 }
 
 .navbar-default .navbar-header .navbar-brand {
