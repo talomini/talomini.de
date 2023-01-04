@@ -37,7 +37,7 @@
     {{ end }}
 </div>
 <script type="text/javascript">
-    GLightbox({ selector: '.play-gallery__item' });
+    window.addEventListener('load', () => GLightbox({ selector: '.play-gallery__item' }));
 </script>
 
 {{ end }}
