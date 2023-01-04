@@ -22,12 +22,10 @@
       <div class="events-empty">Momentan sind leider keine Veranstaltungen geplant.</div>
     {{ end }}
 
-    <details class="events-past" {{ if eq (len $events) 0 }}open{{ end }}>
+    <details class="events-past">
       <summary>
-      {{ if gt (len $events) 0 }}
         <span class="handle-show">Vergangene Termine zeigen</span>
         <span class="handle-hide">Vergangene Termine ausblenden</span>
-      {{ end }}
       </summary>
 
       {{ partial "sections/content/events_list.html" $events_past.Reverse }}
