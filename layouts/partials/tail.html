@@ -1,16 +1,4 @@
 {{ "<!-- TAIL.HTML -->" | safeHTML }}
-<script src="{{ "plugins/jquery/jquery.js" | absURL }}"></script>
-<script src="{{ "plugins/bootstrap/js/bootstrap.min.js" | absURL }}"></script>
-<script src="{{ "plugins/jquery/jquery.easing.min.js" | absURL }}"></script>
-<script src="{{ "plugins/jquery/jquery.fittext.js" | absURL }}"></script>
-<script src="{{ "js/theme.js" | absURL }}"></script>
+{{ $js := resources.Get "js/main.js" | js.Build (dict) }}
+<script src="{{ $js.RelPermalink }}"></script>
 
-<script>
-window.netlifyIdentity?.on("init", user => {
-  if (!user) {
-    window.netlifyIdentity.on("login", () => {
-      document.location.href = "/cms/";
-    });
-  }
-});
-</script>

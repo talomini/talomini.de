@@ -1,4 +1,5 @@
-/*global jQuery */
+import jQuery from './jquery.js';
+
 /*!
 * FitText.js 1.2
 *
