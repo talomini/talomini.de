@@ -31,15 +31,6 @@ enableRobotsTXT = true
             press    = "Presse"
             imprint  = "Impressum"
 
-
-    # ----------
-
-    # PAGE 404
-    [params.page404]
-        text = "OOPS, PAGE NOT FOUND!"
-        background_image = "404.jpg"
-        button_text = ""
-
 [markup]
   defaultMarkdownHandler = "goldmark"
 
