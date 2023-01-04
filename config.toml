@@ -4,6 +4,8 @@ title = "Junges Musiktheater Talomini"
 
 metaDataFormat = "yaml"
 
+enableRobotsTXT = true
+
 [permalinks]
   pages = "/:slug/"
   plays = "/:slug/"
