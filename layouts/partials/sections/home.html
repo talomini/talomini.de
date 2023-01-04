@@ -1,10 +1,12 @@
 {{ "<!-- HOME -->" | safeHTML }}
 {{ with .Site.Data.home }}
     <section id="home"
-            {{ with .background }}
-                style="background-image: url('{{ (printf "images/%s" .) | absURL }}');"
-            {{ end }}
-        >
+        {{- $img := resources.Get "images/banner.jpg"  -}}
+        {{- $colors := $img.Colors -}}
+        {{- $img_src := ($img.Resize (printf "%dx%d webp" $img.Width $img.Height)).Permalink }}
+
+        style="background-image: url('{{ $img_src }}'); background-color: {{ index $colors 0 }};"
+      >
         <div class="header-content">
             <div class="header-content-inner">
                 {{ with .title }}
