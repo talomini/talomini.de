@@ -31,7 +31,7 @@
 <div class="row play-gallery">
     {{ range .Params.images }}
         {{- $image := resources.Get . -}}
-        <a href="{{ $image.Permalink }}" class="play-gallery__item">
+        <a href="{{ ($image.Fit "4048x4048").Permalink }}" class="play-gallery__item">
             <img src={{ ($image.Fill "320x320").Permalink }} alt="" aria-hidden="true" />
         </a>
     {{ end }}
