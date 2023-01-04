@@ -12,6 +12,7 @@ collections:
     label: "Veranstaltung"
     folder: "content/events"
     create: true
+    sortable_fields: ['eventDate']
     summary: "{{eventDate | date('YYYY-MM-DD')}}: {{title}}"
     fields:
       - label: "Title"
