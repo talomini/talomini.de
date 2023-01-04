@@ -7,8 +7,8 @@
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
-  {{ $js := resources.Get "js/main-cms.js" | js.Build (dict) }}
-  <script src="{{ $js.RelPermalink }}"></script>
+  {{ $js := resources.Get "js/main-cms.js" | js.Build (dict)| resources.Fingerprint "sha512" }}
+  <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
 
   <!-- Include the script that builds the page and powers Netlify CMS -->
   <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
