@@ -1,5 +1,3 @@
-import '../plugins/bootstrap/js/bootstrap.min.js';
-
 const query = document.querySelector.bind(document)
 const queryAll = document.querySelectorAll.bind(document)
 const on = (el, event, fn) => el.addEventListener(event, fn)
