@@ -7,9 +7,6 @@
 <section id="content" class="section content-block">
     {{ partial "sections/content/plays.html" . }}
     {{ partial "sections/content/events.html" . }}
-    {{ if .Site.Params.preview }}
-    {{ partial "sections/content/posts.html" . }}
-    {{ end }}
 </section>
 {{ end }}
 
