@@ -1,6 +1,6 @@
 ---
 title: Miriam Gehring
-image: images/team/miriam.jpg
+image: uploads/team_miriam.jpg
 plays: ['ein-einziger-tag', 'naumbalo']
 ---
 

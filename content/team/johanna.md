@@ -1,6 +1,6 @@
 ---
 title: Johanna Knauf
-image: images/team/johanna.jpg
+image: uploads/team_johanna.jpg
 plays: ['ein-einziger-tag']
 ---
 

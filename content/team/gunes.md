@@ -1,6 +1,6 @@
 ---
 title: Güneş Oba
-image: images/team/guenes.jpg
+image: uploads/team_guenes.jpg
 guest: true
 plays:
 - naumbalo

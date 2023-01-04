@@ -1,6 +1,6 @@
 ---
 title: Katharina Gesell
-image: images/team/katharina.jpg
+image: uploads/team_katharina.jpg
 plays: ['ein-einziger-tag', 'naumbalo']
 ---
 
