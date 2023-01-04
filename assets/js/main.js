@@ -1,20 +1,10 @@
 import '../plugins/bootstrap/js/bootstrap.min.js';
-import '../plugins/jquery/jquery.easing.min.js';
 
 import $ from '../plugins/jquery/jquery.js';
 
 const query = document.querySelector.bind(document)
 const queryAll = document.querySelectorAll.bind(document)
 const on = (el, event, fn) => el.addEventListener(event, fn)
-
-// jQuery for page scrolling feature - requires jQuery Easing plugin
-$('a.page-scroll').bind('click', function(event) {
-    var $anchor = $(this);
-    $('html, body').stop().animate({
-        scrollTop: ($($anchor.attr('href')).offset().top - $('.navbar-header').height())
-    }, 1250, 'easeInOutExpo');
-    event.preventDefault();
-});
 
 // Highlight the top nav as scrolling occurs
 $('body').scrollspy({
@@ -35,7 +25,6 @@ $('#navFixed').affix({
         top: ($('.navbar-header').height() * 2)
     }
 })
-
 
 // handle invites
 // https://talomini.de/#invite_token=xxxxxxxxxxxxxxxxxxxxxx

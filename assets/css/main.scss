@@ -6,3 +6,6 @@
 @import 'sections/about/index';
 @import 'sections/content/plays';
 
+html {
+  scroll-behavior: smooth;
+}
