@@ -10,30 +10,6 @@ public_folder: /uploads
 
 collections:
 
-  - name: team
-    label: Künstler
-    folder: content/team
-    create: false
-    fields:
-      - label: Name
-        name: title
-        widget: string
-      - label: Bild
-        name: image
-        widget: image
-      - label: Gast
-        name: guest
-        widget: boolean
-        required: false
-      - label: Stücke
-        name: plays
-        widget: select
-        multiple: true
-        options: ['ein-einziger-tag', 'naumbalo', 'GemEinsam']
-      - label: Text
-        name: body
-        widget: markdown
-
   - name: articles
     label: Artikel
     summary: "{{date | date('YYYY-MM-DD')}} - {{title}} - {{source}}"
@@ -60,6 +36,30 @@ collections:
       - name: "sitemap_exclude"
         widget: hidden
         default: true
+
+  - name: team
+    label: Künstler
+    folder: content/team
+    create: false
+    fields:
+      - label: Name
+        name: title
+        widget: string
+      - label: Bild
+        name: image
+        widget: image
+      - label: Gast
+        name: guest
+        widget: boolean
+        required: false
+      - label: Stücke
+        name: plays
+        widget: select
+        multiple: true
+        options: ['ein-einziger-tag', 'naumbalo', 'GemEinsam']
+      - label: Text
+        name: body
+        widget: markdown
 
   - label: Seiten
     name: pages
