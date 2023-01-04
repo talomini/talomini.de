@@ -1,6 +1,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  {{ range .Data.Pages }}{{ if and (or .IsPage .IsHome) (ne .Params.sitemap_exclude true) -}}
+  {{ range .Data.Pages }}{{ if and (or .IsPage .IsHome) (ne .Params.sitemap_exclude true) (ne .Content "") -}}
   <url>
     <loc>{{ .Permalink }}</loc>
     {{ if not .Lastmod.IsZero -}}
@@ -14,10 +14,11 @@
     {{- end }}
     {{ if .IsTranslated -}}
     {{ range .Translations -}}
-    <xhtml:link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" />
+      <xhtml:link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" />
     {{- end }}
-    <xhtml:link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" />
+      <xhtml:link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" />
     {{- end }}
   </url>
   {{- end }}{{ end }}
-</urlset>
+  </urlset>
+
