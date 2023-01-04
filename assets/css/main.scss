@@ -9,3 +9,15 @@
 html {
   scroll-behavior: smooth;
 }
+
+#navbar-content {
+  max-height: 0;
+  transition: max-height 0.15s ease-out;
+  overflow: hidden;
+
+  &.show {
+    max-height: 300px;
+  }
+}
+
+

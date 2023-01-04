@@ -22,10 +22,14 @@ on(window, 'load', () => {
 })
 
 // Closes the Responsive Menu on Menu Item Click
-queryAll('.navbar-collapse ul li a').forEach((a) => {
+queryAll('#navbar-content ul li a').forEach((a) => {
     on(a, 'click', () => {
-        query('.navbar-toggle:not(.collapsed)')?.click()
+        query('#navbar-content').classList.remove('show')
     })
+})
+
+on(query('#navbar-toggle'), 'click', () => {
+    query('#navbar-content').classList.toggle('show')
 })
 
 // handle invites

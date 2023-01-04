@@ -1,17 +1,12 @@
-{{ $fixed := .fixed }}
 {{ $preview := .Site.Params.preview }}
 {{ with .context }}
     {{ if .Site.Params.navigation.links }}
         {{ "<!-- NAVIGATION -->" | safeHTML }}
-        {{ if $fixed }}
         <nav id="navFixed" class="navbar navbar-default navbar-fixed-top">
-        {{ else }}
-        <nav id="navNotFixed" class="navbar navbar-default">
-        {{ end }}
             <div class="container-fluid">
                 {{ "<!-- Brand and toggle get grouped for better mobile display -->" | safeHTML }}
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <button type="button" class="navbar-toggle" id="navbar-toggle">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -22,7 +17,7 @@
                     {{ end }}
                 </div>
                 {{ "<!-- Get the navigation menu entries and create the links -->" | safeHTML }}
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="collapse navbar-collapse in" id="navbar-content">
                     <ul class="nav navbar-nav navbar-right">
                         {{ $links := .Site.Params.navigation.links }}
                         {{ range .Site.Params.homepage.sections }}
