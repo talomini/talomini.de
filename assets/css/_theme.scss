@@ -33,6 +33,27 @@ h6 {
     font-family: var(--TITLE-FONT, var(--GENERAL-FONT-2));
 }
 
+@media(min-width: 800px) {
+    h1 { font-size: 65px; }
+}
+
+@media(min-width: 700px) and (max-width: 799px) {
+    h1 { font-size: 55px; }
+}
+
+@media(min-width: 600px) and (max-width: 699px) {
+    h1 { font-size: 47.5px; }
+}
+
+@media(min-width: 450px) and (max-width: 599px) {
+    h1 { font-size: 40px; }
+}
+
+@media(max-width: 449px) {
+    h1 { font-size: 40px; }
+}
+
+
 hgroup {
     margin-bottom: 1em;
 }

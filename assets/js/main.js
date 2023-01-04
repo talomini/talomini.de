@@ -1,6 +1,5 @@
 import '../plugins/bootstrap/js/bootstrap.min.js';
 import '../plugins/jquery/jquery.easing.min.js';
-import '../plugins/jquery/jquery.fittext.js';
 
 import $ from '../plugins/jquery/jquery.js';
 
@@ -23,14 +22,6 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
-
-// Fit Text Plugin for Main Header
-$("h1").fitText(
-    1.2, {
-        minFontSize: '35px',
-        maxFontSize: '65px'
-    }
-);
 
 // Offset for Main Navigation
 $('#navFixed').affix({
