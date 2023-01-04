@@ -2,7 +2,7 @@
 <div class="row">
     <div class="col-xs-12 col-md-4">
         {{- $image := resources.Get .Params.image -}}
-        <img class="team-photo" src={{ ($image.Fill "440x440").Permalink }} />
+        <img class="team-photo" src={{ ($image.Fill "440x440 webp").Permalink }} />
     </div>
     <div class="col-xs-12 col-md-8 text-tertiary">
         {{ .Content }}
@@ -17,7 +17,7 @@
             {{- $image := resources.Get $play.Params.image  -}}
             <div class="col-xs-12 col-md-4 member">
               <a href="{{ .Permalink }}">
-                  <img src={{ ($image.Fill "440x440").Permalink }} alt="{{ .Title }}" aria-hidden="true" />
+                  <img src={{ ($image.Fill "440x440 webp").Permalink }} alt="{{ .Title }}" aria-hidden="true" />
                   <div class="name">{{ .Title }}</div>
               </a>
             </div>

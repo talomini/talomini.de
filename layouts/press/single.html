@@ -8,7 +8,7 @@
     {{ if and (.Params.images) (gt (len .Params.images) 0) }}
       {{ range .Params.images }}
         {{- $image := resources.Get . -}}
-        <img src={{ ($image.Fill "320x320").Permalink }} alt="" aria-hidden="true" />
+        <img src={{ ($image.Fill "320x320 webp").Permalink }} alt="" aria-hidden="true" />
       {{ end }}
     {{ else }}
       {{ .Params.title }} - {{ .Params.source }}

@@ -3,7 +3,7 @@
     {{ if .Params.image }}
     {{- $image := resources.Get .Params.image -}}
     <div class="col-xs-12 col-md-4">
-        <img class="team-photo" src={{ ($image.Fill "440x440").Permalink }} />
+        <img class="team-photo" src={{ ($image.Fill "440x440 webp").Permalink }} />
     </div>
     {{ end }}
 
@@ -20,7 +20,7 @@
             {{- $image := resources.Get $member.Params.image  -}}
             <div class="col-xs-12 col-md-4 member">
                 <a href="{{ .Permalink }}" class="glightbox" data-gallery="gallery1">
-                  <img src={{ ($image.Fill "440x440").Permalink }} alt="{{ .Title }}" aria-hidden="true" />
+                  <img src={{ ($image.Fill "440x440 webp").Permalink }} alt="{{ .Title }}" aria-hidden="true" />
                   <div class="name">{{ .Title }}</div>
                 </a>
             </div>
@@ -31,8 +31,8 @@
 <div class="row play-gallery">
     {{ range .Params.images }}
         {{- $image := resources.Get . -}}
-        <a href="{{ ($image.Fit "4048x4048").Permalink }}" class="play-gallery__item">
-            <img src={{ ($image.Fill "320x320").Permalink }} alt="" aria-hidden="true" />
+        <a href="{{ ($image.Fit "4048x4048 webp").Permalink }}" class="play-gallery__item">
+            <img src={{ ($image.Fill "320x320 webp").Permalink }} alt="" aria-hidden="true" />
         </a>
     {{ end }}
 </div>
