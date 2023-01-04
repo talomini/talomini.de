@@ -3,7 +3,7 @@
     {{ if .Params.image }}
     {{- $image := resources.Get .Params.image -}}
     <div class="col-xs-12 col-md-4">
-        <img class="team-photo" src={{ ($image.Fill "440x440 webp").Permalink }} />
+        <img class="team-photo large" src={{ ($image.Fill "600x600 webp").Permalink }} />
     </div>
     {{ end }}
 
@@ -20,7 +20,7 @@
         {{- $image := resources.Get $member.Params.image -}}
             <div class="col-xs-12 col-md-4 member">
                 <a href="{{ .Permalink }}">
-                    <img src={{ ($image.Fill "440x440 webp").Permalink }} alt="{{ .Title }}" aria-hidden="true" />
+                    <img src={{ ($image.Fill "400x400 webp").Permalink }} alt="{{ .Title }}" aria-hidden="true" />
                     <div class="name">{{ .Title }}</div>
                 </a>
             </div>

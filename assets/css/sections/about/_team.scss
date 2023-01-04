@@ -8,6 +8,11 @@
   margin: 30px auto;
 
   max-width: unset;
+
+  &.large {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 .member a {
