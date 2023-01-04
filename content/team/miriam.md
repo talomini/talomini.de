@@ -1,7 +1,10 @@
 ---
 title: Miriam Gehring
 image: uploads/team_miriam.jpg
-plays: ['ein-einziger-tag', 'naumbalo']
+plays:
+  - ein-einziger-tag
+  - naumbalo
+  - GemEinsam
 ---
 
 **Miriam Gehring** (*1987) stammt ursprünglich aus Tirschenreuth in der
