@@ -2,6 +2,17 @@
 title: Ein einziger Tag
 image: /uploads/oneday.jpg
 weight: -1
+images:
+  - /uploads/ein-einziger-tag_001_talomini1.jpg
+  - /uploads/ein-einziger-tag_002_talomini2.jpg
+  - /uploads/ein-einziger-tag_003_talomini5b.jpg
+  - /uploads/ein-einziger-tag_004_kind-unscharf.jpg
+  - /uploads/ein-einziger-tag_005_talomini6.jpg
+  - /uploads/ein-einziger-tag_006_fliege5.jpg
+  - /uploads/ein-einziger-tag_007_fliege4.jpg
+  - /uploads/ein-einziger-tag_008_fliege1.jpg
+  - /uploads/ein-einziger-tag_009_fliege2.jpg
+  - /uploads/ein-einziger-tag_010_fliege3.jpg
 ---
 
 "Ein einziger Tag" ist ein Musiktheater für Kinder über das Leben einer

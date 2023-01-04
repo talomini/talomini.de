@@ -28,19 +28,16 @@
     {{ end }}
 </div>
 
-{{ with .Page.Resources.ByType "image" }}
-    <div class="row play-gallery">
-        {{ range . }}
-            <a href="{{ .Permalink }}" class="play-gallery__item">
-                <img src={{ (.Fill "320x320").Permalink }} alt="{{ .Title }}" aria-hidden="true" />
-            </a>
-
-        {{ end }}
-    </div>
-    <script type="text/javascript">
-        GLightbox({ selector: '.play-gallery__item' });
-    </script>
-{{ end }}
+<div class="row play-gallery">
+    {{ range .Params.images }}
+        {{- $image := resources.Get . -}}
+        <a href="{{ $image.Permalink }}" class="play-gallery__item">
+            <img src={{ ($image.Fill "320x320").Permalink }} alt="" aria-hidden="true" />
+        </a>
+    {{ end }}
 </div>
-{{ end }}
+<script type="text/javascript">
+    GLightbox({ selector: '.play-gallery__item' });
+</script>
 
+{{ end }}
