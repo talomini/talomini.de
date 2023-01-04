@@ -3,8 +3,8 @@ backend:
   branch: master
 
 local_backend: true
+# > npx netlify-cms-proxy-server
 
-# publish_mode: editorial_workflow
 
 media_folder: "assets/uploads"
 public_folder: "/uploads"
