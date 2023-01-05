@@ -10,23 +10,47 @@ enableRobotsTXT = true
   plays = "/:slug/"
   team = "/:slug/"
 
+[params]
+  preview = false
+  description = "Das Saarbrücker Musiktheaterensemble vereint Gesang, Tanz, Instrumentalspiel und Szene in liebevollen Stücken für alle von 3 bis 99 Jahren."
+
 [params.meta]
   favicon = "favicon.ico"
 
-[params]
-    description = "Das Saarbrücker Musiktheaterensemble vereint Gesang, Tanz, Instrumentalspiel und Szene in liebevollen Stücken für alle von 3 bis 99 Jahren."
+[[params.section]]
+  key   = "home"
+  label = "Home"
 
-    [params.homepage]
-        sections = [ "home", "about", "plays", "events", "contact", "press", "imprint" ]
+[[params.section]]
+  key   = "about"
+  label = "Über uns"
+  link  = "#ueber-uns"
 
-    [params.navigation]
-        [params.navigation.links]
-            about    = "Über uns"
-            plays    = "Stücke"
-            events   = "Termine"
-            contact  = "Kontakt"
-            press    = "Presse"
-            imprint  = "Impressum"
+[[params.section]]
+  key   = "plays"
+  label = "Stücke"
+  link  = "#stuecke"
+
+[[params.section]]
+  key   = "events"
+  label = "Termine"
+  link  = "#termine"
+
+[[params.section]]
+  key   = "contact"
+  label = "Kontakt"
+  link  = "#kontakt"
+
+[[params.section]]
+  key   = "press"
+  label = "Presse"
+  link  = "#presse"
+  preview = true
+
+[[params.section]]
+  key   = "imprint"
+  label = "Impressum"
+  link  = "/impressum/"
 
 [markup]
   defaultMarkdownHandler = "goldmark"

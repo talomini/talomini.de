@@ -1,59 +1,36 @@
-{{ $preview := .Site.Params.preview }}
 {{ with .context }}
-    {{ if .Site.Params.navigation.links }}
-        {{ "<!-- NAVIGATION -->" | safeHTML }}
-        <nav id="navFixed" class="navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
-                {{ "<!-- Brand and toggle get grouped for better mobile display -->" | safeHTML }}
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" id="navbar-toggle">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    {{ with .Site.Title }}
-                        <a class="navbar-brand page-scroll" href="#">{{ . | markdownify }}</a>
-                    {{ end }}
-                </div>
-                {{ "<!-- Get the navigation menu entries and create the links -->" | safeHTML }}
-                <div class="collapse navbar-collapse in" id="navbar-content">
-                    <ul class="nav navbar-nav navbar-right">
-                        {{ $links := .Site.Params.navigation.links }}
-                        {{ range .Site.Params.homepage.sections }}
-                            {{ if and (eq . "about") $links.about }}
-                                <li>
-                                    <a class="page-scroll" href="#ueber-uns">{{ $links.about }}</a>
-                                </li>
-                            {{ else if and (eq . "plays") $links.plays }}
-                                <li>
-                                    <a class="page-scroll" href="#stuecke">{{ $links.plays }}</a>
-                                </li>
-                            {{ else if and (eq . "events") $links.events }}
-                                <li>
-                                    <a class="page-scroll" href="#termine">{{ $links.events }}</a>
-                                </li>
-                            {{ else if and (eq . "contact") $links.contact }}
-                                <li>
-                                    <a class="page-scroll" href="#kontakt">{{ $links.contact }}</a>
-                                </li>
-                            {{ else if and (eq . "press") $links.press }}
-                                {{ if $preview  }}
-                                <li>
-                                    <a class="page-scroll" href="/presse/">{{ $links.press }}</a>
-                                </li>
-                                {{ end }}
-                            {{ else if and (eq . "imprint") $links.imprint }}
-                                <li>
-                                    <a class="page-scroll" href="/impressum/">{{ $links.imprint }}</a>
-                                </li>
-                            {{ end }}
-                        {{ end }}
-                    </ul>
-                </div>
-                {{ "<!-- /.navbar-collapse -->" | safeHTML }}
+    {{ $preview := .Site.Params.preview }}
+    {{ "<!-- NAVIGATION -->" | safeHTML }}
+    <nav id="navFixed" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            {{ "<!-- Brand and toggle get grouped for better mobile display -->" | safeHTML }}
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" id="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                {{ with .Site.Title }}
+                    <a class="navbar-brand page-scroll" href="#">{{ . | markdownify }}</a>
+                {{ end }}
             </div>
-            {{ "<!-- /.container-fluid -->" | safeHTML }}
-        </nav>
-    {{ end }}
+            {{ "<!-- Get the navigation menu entries and create the links -->" | safeHTML }}
+            <div class="collapse navbar-collapse in" id="navbar-content">
+                <ul class="nav navbar-nav navbar-right">
+                    {{ $sections := .Site.Params.section }}
+
+                    {{ range $sections }}
+                        {{ if and .link (or (not .preview) $preview) }}
+                            <li>
+                                <a href="{{ .link }}">{{ .label }}</a>
+                            </li>
+                        {{ end }}
+                    {{ end }}
+                </ul>
+            </div>
+            {{ "<!-- /.navbar-collapse -->" | safeHTML }}
+        </div>
+        {{ "<!-- /.container-fluid -->" | safeHTML }}
+    </nav>
 {{ end }}
