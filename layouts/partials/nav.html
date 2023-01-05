@@ -23,19 +23,19 @@
                         {{ range .Site.Params.homepage.sections }}
                             {{ if and (eq . "about") $links.about }}
                                 <li>
-                                    <a class="page-scroll" href="#about">{{ $links.about }}</a>
+                                    <a class="page-scroll" href="#ueber-uns">{{ $links.about }}</a>
                                 </li>
                             {{ else if and (eq . "plays") $links.plays }}
                                 <li>
-                                    <a class="page-scroll" href="#content">{{ $links.plays }}</a>
+                                    <a class="page-scroll" href="#stuecke">{{ $links.plays }}</a>
                                 </li>
                             {{ else if and (eq . "events") $links.events }}
                                 <li>
-                                    <a class="page-scroll" href="#content-events">{{ $links.events }}</a>
+                                    <a class="page-scroll" href="#termine">{{ $links.events }}</a>
                                 </li>
                             {{ else if and (eq . "contact") $links.contact }}
                                 <li>
-                                    <a class="page-scroll" href="#contact">{{ $links.contact }}</a>
+                                    <a class="page-scroll" href="#kontakt">{{ $links.contact }}</a>
                                 </li>
                             {{ else if and (eq . "press") $links.press }}
                                 {{ if $preview  }}

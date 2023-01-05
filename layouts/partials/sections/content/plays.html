@@ -1,6 +1,7 @@
 {{ with $.Site.GetPage "plays" }}
-
 {{ if gt (len .Pages) 0 }}
+
+<div id="stuecke"></div>
 
 {{ partial "sections/content/title.html" (dict "Title" "Stücke") }}
 
