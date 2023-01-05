@@ -1,0 +1,7 @@
+{{ range where site.Params.section ".key" . }}
+{{ if and .link (eq (substr .link 0 1) "#") }}
+<div id="{{ substr .link 1 }}"></div>
+{{end}}
+{{ end }}
+
+
