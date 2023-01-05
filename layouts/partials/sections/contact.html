@@ -1,7 +1,7 @@
 {{ "<!-- CONTACT -->" | safeHTML }}
 {{ with .Site.Data.contact }}
     {{ partial "sections/content/anchor.html" "contact" }}
-    <section class="section"
+    <section class="section contact"
         {{- $img := resources.Get "images/banner_2.jpg"  -}}
         {{- $colors := $img.Colors -}}
         {{- $img_src := ($img.Resize (printf "%dx%d webp" $img.Width $img.Height)).Permalink }}
