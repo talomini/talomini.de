@@ -488,6 +488,10 @@ ul.images-list {
     color: var(--NAVBAR-FIXED-BRAND-HOVER-COLOR, var(--GENERAL-LINK-ACTIVE-COLOR-1));
 }
 
+.navbar-default .nav > li > a {
+  cursor: pointer;
+}
+
 .navbar-default .nav > li > a,
 .navbar-default .nav > li > a:focus {
     font-weight: 700;
