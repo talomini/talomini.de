@@ -2,7 +2,7 @@
 {{ if gt (len .Pages) 0 }}
 
 {{ partial "sections/content/anchor.html" "plays" }}
-{{ partial "sections/content/title.html" (dict "Title" "Stücke") }}
+{{ partial "sections/content/title.html" "plays" }}
 
 <div class="container">
   {{ range (.Pages.ByParam "eventDate").Reverse }}
