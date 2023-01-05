@@ -20,7 +20,6 @@ enableRobotsTXT = true
         sections = [ "home", "about", "plays", "events", "contact", "press", "imprint" ]
 
     [params.navigation]
-        brand = "Junges Musiktheater Talomini"
         [params.navigation.links]
             about    = "Über uns"
             plays    = "Stücke"
