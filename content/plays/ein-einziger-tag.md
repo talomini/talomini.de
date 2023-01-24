@@ -13,6 +13,14 @@ images:
   - /uploads/ein-einziger-tag_008_fliege1.jpg
   - /uploads/ein-einziger-tag_009_fliege2.jpg
   - /uploads/ein-einziger-tag_010_fliege3.jpg
+  - /uploads/fsf_30-10-2022-n-0025.jpg
+  - /uploads/fsf_30-10-2022-n-0027.jpg
+  - /uploads/fsf_30-10-2022-n-0046.jpg
+  - /uploads/fsf_30-10-2022-n-0049.jpg
+  - /uploads/fsf_30-10-2022-n-0029.jpg
+  - /uploads/fsf_30-10-2022-n-0036.jpg
+  - /uploads/fsf_30-10-2022-n-0040.jpg
+  - /uploads/kinder-unscharf-gemacht-freistil22.jpg
 ---
 
 "Ein einziger Tag" ist ein Musiktheater für Kinder über das Leben einer
