@@ -3,18 +3,17 @@ title: Naumbalo - träum’ mal richtig hin…
 image: uploads/naumbalo.jpg
 weight: -2
 images:
-- /uploads/naumbalo_001_Naumbalo1.jpg
-- /uploads/naumbalo_002_Naumbalo2.jpg
-- /uploads/naumbalo_003_Naumbalo3.jpg
-- /uploads/naumbalo_004_Naumbalo4.jpg
-- /uploads/naumbalo_005_Naumbalo5.jpg
-- /uploads/naumbalo_006_Naumbalo6.jpg
-- /uploads/naumbalo_007_Naumbalo7.jpg
-- /uploads/naumbalo_008_Naumbalo9.jpg
-- /uploads/naumbalo_009_Naumbalo10.jpg
-- /uploads/naumbalo_010_Naumbalo8.jpg
-
-
+  - /uploads/naumbalo_001_Naumbalo1.jpg
+  - /uploads/naumbalo_002_Naumbalo2.jpg
+  - /uploads/naumbalo_003_Naumbalo3.jpg
+  - /uploads/naumbalo_004_Naumbalo4.jpg
+  - /uploads/naumbalo_005_Naumbalo5.jpg
+  - /uploads/naumbalo_006_Naumbalo6.jpg
+  - /uploads/naumbalo_007_Naumbalo7.jpg
+  - /uploads/naumbalo_008_Naumbalo9.jpg
+  - /uploads/naumbalo_009_Naumbalo10.jpg
+  - /uploads/naumbalo_010_Naumbalo8.jpg
+  - /uploads/test.png
 ---
 An diesem Abend wartet ein kleiner Kobold und öffnet die Tür zu Naumbalo, der fantastischen Welt der Träume.  
 Und schon beginnt die aufregende Reise. Was gibt es dort zu entdecken? Zauberhafte Dinge, fabelhafte Wesen, wunderbare Gänsehaut, Grusel erleben. Hier scheint wirklich alles möglich zu sein! Doch ist da nicht schon wieder der Schatten?  
