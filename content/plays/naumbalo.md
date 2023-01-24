@@ -13,6 +13,8 @@ images:
   - /uploads/naumbalo_008_Naumbalo9.jpg
   - /uploads/naumbalo_009_Naumbalo10.jpg
   - /uploads/naumbalo_010_Naumbalo8.jpg
+  - /uploads/img_7021.jpg
+  - /uploads/img_7019.jpg
 ---
 An diesem Abend wartet ein kleiner Kobold und öffnet die Tür zu Naumbalo, der fantastischen Welt der Träume.  
 Und schon beginnt die aufregende Reise. Was gibt es dort zu entdecken? Zauberhafte Dinge, fabelhafte Wesen, wunderbare Gänsehaut, Grusel erleben. Hier scheint wirklich alles möglich zu sein! Doch ist da nicht schon wieder der Schatten?  
