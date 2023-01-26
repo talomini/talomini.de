@@ -133,7 +133,7 @@ collections:
         name: eventDate
         widget: datetime
         date_format: 'DD.MM.YYYY'
-        time_format: 'HH:MM'
+        time_format: 'HH:mm'
       - label: Veranstaltungsort
         name: location
         widget: string
