@@ -5,14 +5,13 @@
 {{ range .Pages }}
 <div class="container col-md-offset-2">
   <div class="row">
-    {{ if and (.Params.images) (gt (len .Params.images) 0) }}
-      {{ range .Params.images }}
-        {{- $image := resources.Get . -}}
-        <img src={{ ($image.Fill "320x320 webp").Permalink }} alt="" aria-hidden="true" />
-      {{ end }}
-    {{ else }}
+    <a href="{{ .Permalink }}">
+    {{ if and (.Params.image) }}
+      {{- $image := resources.Get .Params.image -}}
+      <img width="160" height="160" src={{ ($image.Fill "320x320 webp").Permalink }} alt="" aria-hidden="true" />
       {{ .Params.title }} - {{ .Params.source }}
     {{ end }}
+    </a>
   </div>
 </div>
 {{ end }}

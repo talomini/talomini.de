@@ -1,0 +1,12 @@
+{{ define "content" }}
+<div class="row">
+    {{ if .Params.image }}
+    {{- $image := resources.Get .Params.image -}}
+        <img src={{ ($image.Resize "1940x webp").Permalink }} />
+    {{ end }}
+
+    <div class="col-xs-12 col-md-8 text-tertiary">
+        {{ .Content | markdownify }}
+    </div>
+</div>
+{{ end }}

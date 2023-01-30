@@ -44,7 +44,7 @@ enableRobotsTXT = true
 [[params.section]]
   key   = "press"
   label = "Presse"
-  link  = "#presse"
+  link  = "/presse/"
   preview = true
 
 [[params.section]]
