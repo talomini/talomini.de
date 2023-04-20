@@ -132,8 +132,10 @@ collections:
       - label: Datum
         name: eventDate
         widget: datetime
+        format: YYYY-MM-DDTHH:mm:00Z
         date_format: 'DD.MM.YYYY'
         time_format: 'HH:mm'
+        picker_utc: false
       - label: Veranstaltungsort
         name: location
         widget: string
