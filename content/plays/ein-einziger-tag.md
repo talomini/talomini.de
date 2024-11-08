@@ -1,6 +1,6 @@
 ---
 title: Ein einziger Tag
-image: /uploads/tietelbild_fliege.jpeg
+image: /uploads/foto_fliege1.jpeg
 weight: -1
 images:
   - /uploads/ein-einziger-tag_001_talomini1.jpg
