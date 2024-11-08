@@ -1,6 +1,6 @@
 ---
 title: Gedanken(t)räume
-image: /uploads/fullsizeoutput_2479.jpeg
+image: /uploads/fullsizeoutput_247a.jpeg
 weight: -4
 images:
   - /uploads/fullsizeoutput_2479.jpeg
