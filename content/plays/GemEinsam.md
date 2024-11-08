@@ -22,6 +22,11 @@ images:
   - /uploads/freistil-festival-2024-08-10-2024-vormittags-e_11.jpg
   - /uploads/freistil-festival-2024-08-10-2024-vormittags-e_06-1-.jpg
   - /uploads/freistil-festival-2024-08-10-2024-vormittags-e_05.jpg
+  - /uploads/freistil-festival-2024-08-10-2024-vormittags-e_09-1-.jpg
+  - /uploads/freistil-festival-2024-08-10-2024-vormittags-e_04.jpg
+  - /uploads/freistil-festival-2024-08-10-2024-vormittags-e_01.jpg
+  - /uploads/freistil-festival-2024-08-10-2024-vormittags-e_20.jpg
+  - /uploads/freistil-festival-2024-08-10-2024-vormittags-e_23.jpg
 ---
 Wie fühlt sich das Zusammensein an? Und wie das Alleinsein? Gibt es Einsamkeit unter Vielen? Kann man allein und (nicht) einsam sein?
 
