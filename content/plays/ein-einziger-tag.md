@@ -1,6 +1,6 @@
 ---
 title: Ein einziger Tag
-image: /uploads/oneday.jpg
+image: /uploads/fsf_30-10-2022-n-0046.jpg
 weight: -1
 images:
   - /uploads/ein-einziger-tag_001_talomini1.jpg
