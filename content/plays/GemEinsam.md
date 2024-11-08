@@ -1,6 +1,6 @@
 ---
 title: GemEinsam
-image: uploads/kjpa0f43r9wmho5hmagpgw_thumb_4055.jpg
+image: /uploads/freistil-festival-2024-08-10-2024-vormittags-e_27.jpg
 weight: -3
 images:
   - /uploads/p1011589.jpg
