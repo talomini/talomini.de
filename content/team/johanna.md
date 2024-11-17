@@ -4,6 +4,7 @@ image: uploads/team_johanna.jpg
 plays:
   - ein-einziger-tag
   - GemEinsam
+  - gedankenträume
 ---
 
 **Johanna Knauf** (*1992, geb. Heller) wuchs in Nürnberg auf und nahm nach
