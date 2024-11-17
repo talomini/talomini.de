@@ -56,7 +56,7 @@ collections:
         name: plays
         widget: select
         multiple: true
-        options: ['ein-einziger-tag', 'naumbalo', 'GemEinsam']
+        options: ['ein-einziger-tag', 'naumbalo', 'GemEinsam', 'gedankenträume']
       - label: Text
         name: body
         widget: markdown
@@ -118,6 +118,9 @@ collections:
           label: Image
           name: image
           widget: image
+      - label: Text
+        name: body
+        widget: markdown
 
   - name: event
     label: Termine
