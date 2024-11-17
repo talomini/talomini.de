@@ -3,17 +3,18 @@
 
 {{ with $.Site.GetPage "articles" }}
 {{ range .Pages }}
-<div class="container col-md-offset-2">
-  <div class="row">
-    <a href="{{ .Permalink }}">
-    {{ if and (.Params.image) }}
-      {{- $image := resources.Get .Params.image -}}
-      <img width="160" height="160" src={{ ($image.Fill "320x320 webp").Permalink }} alt="" aria-hidden="true" />
-      {{ .Params.title }} - {{ .Params.source }}
-    {{ end }}
-    </a>
-  </div>
-</div>
+  <a class="press-article" href="{{ .Permalink }}">
+  {{ if and (.Params.image) }}
+    {{- $image := resources.Get .Params.image -}}
+    <img width="160" height="160" src={{ ($image.Fill "320x320 webp").Permalink }} alt="" aria-hidden="true" />
+
+    <div class="meta">
+        <!-- <pre>link: {{ .Params.link }}</pre> -->
+      <div>{{ dateFormat "01.02.2006" (time .Params.Date) }} – {{ .Params.source }}</div>
+      <div class="title">{{ .Params.title }}</div>
+    </div>
+  {{ end }}
+  </a>
 {{ end }}
 
 {{ end }}

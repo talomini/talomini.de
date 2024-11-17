@@ -45,7 +45,7 @@ enableRobotsTXT = true
   key   = "press"
   label = "Presse"
   link  = "/presse/"
-  preview = true
+  # preview = true
 
 [[params.section]]
   key   = "imprint"

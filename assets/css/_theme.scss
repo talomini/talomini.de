@@ -76,9 +76,7 @@ hr.light {
 }
 
 a {
-    -webkit-transition: all .35s;
-    -moz-transition: all .35s;
-    transition: all .35s;
+    // transition: color .35s;
 
     color: var(--GENERAL-LINK-COLOR-1);
 }
