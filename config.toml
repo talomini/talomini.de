@@ -58,3 +58,8 @@ enableRobotsTXT = true
 [markup.goldmark]
 [markup.goldmark.renderer]
   unsafe = true
+
+[privacy]
+  [privacy.youTube]
+    disable = false
+    privacyEnhanced = true
