@@ -25,6 +25,4 @@ long_text: >-
   (Titelbild und Portraitfotos: Frederik Bastgen)
 
 
-
-
-  <https://www.youtube.com/watch?v=dANorL-cHik>
+  {{< youtube dANorL-cHik >}}
