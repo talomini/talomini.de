@@ -19,4 +19,4 @@ Luft umgibt uns ständig, trägt den Klang, den Atem, bewegt und verbindet uns u
 
 „Da liegt was in der Luft“ ist ein Musiktheaterstück für die Allerkleinsten (0-36 Monate) und ihre Bezugspersonen. Das Junge Musiktheater Talomini lädt dazu ein mit allen Sinnen in das Element Luft einzutauchen - zu lauschen, zu spüren, zu erforschen.
 
-(Fotos: Jean M. Laffitau)[assets/uploads/da-liegt-was-in-der-luft.mp3](assets/uploads/da-liegt-was-in-der-luft.mp3)
+(Fotos: Jean M. Laffitau)
