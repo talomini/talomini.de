@@ -23,6 +23,8 @@ Luft umgibt uns ständig, trägt den Klang, den Atem, bewegt und verbindet uns u
 
 (Fotos: Jean M. Laffitau)
 
+assets/uploads/da-liegt-was-in-der-luft.mp3
+
 <https://youtu.be/ch5UEoM1MYM>
 
 https://youtu.be/ch5UEoM1MYM
