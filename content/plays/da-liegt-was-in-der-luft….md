@@ -23,10 +23,6 @@ Luft umgibt uns ständig, trägt den Klang, den Atem, bewegt und verbindet uns u
 
 (Fotos: Jean M. Laffitau)
 
-assets/uploads/da-liegt-was-in-der-luft.mp3
-
 Musiktheater für Babys: Talomini feiert Premiere in Saarbrücken. Mitschnitt der Sendung "Canapé" am 15.03.2026 auf SR kultur
 
 <https://youtu.be/ch5UEoM1MYM>
-
-https://youtu.be/ch5UEoM1MYM
