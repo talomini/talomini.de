@@ -23,9 +23,9 @@ Luft umgibt uns ständig, trägt den Klang, den Atem, bewegt und verbindet uns u
 
 
 
+{{< youtube RAQAK2nki3A >}}
+
 "Musiktheater für Babys: Talomini feiert Premiere in Saarbrücken"\
 Mitschnitt aus der Sendung "Canapé" am 15.03.2026 auf SR kultur
-
-{{< youtube RAQAK2nki3A >}}
 
 (Fotos: Jean M. Laffitau)
