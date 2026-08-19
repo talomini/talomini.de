@@ -24,7 +24,13 @@ Luft umgibt uns ständig, trägt den Klang, den Atem, bewegt und verbindet uns u
 (Fotos: Jean M. Laffitau)
 
 ```
-<a href="https://youtu.be/ch5UEoM1MYM" target="_blank">
-  🎵 Konzertaufnahme auf YouTube ansehen
-</a>
+<iframe
+  width="100%"
+  height="315"
+  src="https://www.youtube-nocookie.com/embed/ch5UEoM1MYM"
+  title="Talomini Konzertaufnahme"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
 ```
